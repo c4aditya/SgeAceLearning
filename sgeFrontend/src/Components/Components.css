@@ -234,6 +234,7 @@
 .para-about-us-hero-heading{
     font-size: 20px;
     font-weight: 600;
+    color: #081021;
 }
 
 .right-side-about-us{
@@ -246,6 +247,7 @@
     font-size: 14px;
     line-height: 1.5rem;
     letter-spacing: .4px;
+    color: #515355;
 }
 
 .button-know-more{
@@ -289,21 +291,145 @@
 
 
 /*------------------------------------------------------------------------------------- course section css start -----------------------------------------------------------------------------------*/
+.our-program{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.left-side-our-program{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-side-our-program{
+    width: 45%;
+}
+.right-side-our-program img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.provide ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.provide ul li{
+     font-size: 14px;
+     color: #162645;
+     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.provide ul span{
+    display: flex;
+    font-size: 2rem;  
+    background-color: #F34A31;
+    color: white;
+    padding: 10px;
+    border-radius: 100%;
+    
+}
+.course-rating{
+    display: flex;
+
+}
+.course-rating p{
+    display: flex;
+    gap: 10px;
+    color: #162645;
+    font-weight: 600;
+}
+.course-rating p span svg{
+    fill: #F34A31;
+}
 .course_data{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
-    padding: 5%;
+    padding: 5% 0%;
     gap: 20px;
 }
-.course-images {
-    border: 1px solid red;
-}
+
 
 .course-images img{
     width: 100%;
-    height: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
+.course-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #162645;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.course-cards-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-cards-buttons button{
+
+    padding: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background-color: #F34A31;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.course-name p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #162645;
+}
+
+.card-hr{
+    border: 1px light #162645;
+}
+
+
+
 /* --------------------------------------------------------------------------------------course section ends ----------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------Why choose us section -------------------------------------------------------------------------------------- */
+
+
+
+.why-choose-us-section{
+
+}
+
+.overlay{
+    
+    padding: 5% 2%;
+    /* background-color: rgba(177, 164, 164, 0.5); */
+}
+
+
+
+
+.why-choose-us-section ul{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+/* ---------------------------------------------------------------------------------------Why choose us section ends -------------------------------------------------------------------------------------- */
+
 
 /* ---------------------------------------------------------------------------------------hero section ends --------------------------------------------------------------------------------------- */
