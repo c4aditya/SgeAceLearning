@@ -85,22 +85,22 @@
     font-weight: 600;
 }
 
-.pages ul li:hover{
+.pages ul li:hover {
     color: #F34A31;
     cursor: pointer;
 }
 
-.pages ul li button{
+.pages ul li button {
     background-color: white;
     border: none;
     font-weight: 600;
     font-size: 14px;
 }
 
-.pages ul li button:hover{
+.pages ul li button:hover {
     color: #F34A31;
     cursor: pointer;
-   
+
 }
 
 .buttons {
@@ -210,7 +210,7 @@
 
 }
 
-.enroll-now:hover{
+.enroll-now:hover {
     background-color: #F34A31;
     color: white;
     cursor: pointer;
@@ -227,7 +227,7 @@
     border-radius: 5px;
 }
 
-.enquiry-now:hover{
+.enquiry-now:hover {
     background-color: #081021;
     color: white;
     cursor: pointer;
@@ -617,7 +617,7 @@
     display: flex;
     justify-content: space-between;
     padding: 5%;
-    
+
 
 
 }
@@ -726,7 +726,7 @@ input[type="number"] {
 
 }
 
-.submit-contact-us:hover{
+.submit-contact-us:hover {
     cursor: pointer;
     background-color: white;
     color: black;
@@ -738,7 +738,7 @@ input[type="number"] {
 
 }
 
-.content-about-us-hero ul{
+.content-about-us-hero ul {
     list-style: none;
 
     display: flex;
@@ -746,16 +746,16 @@ input[type="number"] {
     gap: 10px;
 }
 
-.content-about-us-hero ul li{
+.content-about-us-hero ul li {
     display: flex;
- 
+
     gap: 10px;
     font-size: 14px;
     font-weight: 600;
     align-items: center;
 }
 
-.content-about-us-hero ul li span{
+.content-about-us-hero ul li span {
 
     display: flex;
     align-items: center;
@@ -763,29 +763,29 @@ input[type="number"] {
     border-radius: 100%;
     background-color: #F34A31;
     color: white;
-   
+
     font-size: 15px;
 
 }
 
-.content-about-us-hero ul li span svg{
+.content-about-us-hero ul li span svg {
     font-weight: 700;
 }
 
 
 /*--------------------------------------------------------------------------------------- footer section css starts --------------------------------------------------------------------------------*/
-.main-footer-wrapper{
+.main-footer-wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: white;
     margin-top: 5%;
-    position: relative;    
+    position: relative;
     background-color: #081021;
 }
 
 
-.footer-image img{
+.footer-image img {
     position: absolute;
     height: 60px;
     width: 60px;
@@ -800,28 +800,29 @@ input[type="number"] {
 
 }
 
-.history-of-us{
-    
-width: 80%;
-margin: auto;
-line-height: 1.3rem;
-font-size: 14px;
+.history-of-us {
 
-display: flex;
-align-items: center;
-justify-content: center;
-justify-items: center;
-text-align: center;
-letter-spacing: .4px;
-color: #c8c8c9;
+    width: 80%;
+    margin: auto;
+    line-height: 1.3rem;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    letter-spacing: .4px;
+    color: #c8c8c9;
 
 }
-.history-and-social-meadia-links-footer{
-   
+
+.history-and-social-meadia-links-footer {
+
     margin-top: 5%;
 }
 
-.footer-section-social-media ul{
+.footer-section-social-media ul {
     display: flex;
     list-style: none;
     align-items: center;
@@ -832,43 +833,46 @@ color: #c8c8c9;
 
 }
 
-.footer-section-social-media ul li{
-    
+.footer-section-social-media ul li {
+
     display: flex;
     padding: 10px;
     border-radius: 100%;
     background-color: #F34A31;
 }
 
-.footer-section-social-media ul li:hover{
+.footer-section-social-media ul li:hover {
     background-color: white;
     color: #081021;
 }
 
-.footer-links{
-    padding:0% 5%;
+.footer-links {
+    padding: 0% 5%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    
-    
+
+
 }
-.main-copy{
- 
+
+.main-copy {
+
     letter-spacing: .6px;
 
 }
 
-.main-copy p{
+.main-copy p {
     display: flex;
     font-size: 14px;
-    
+
 }
-.main-copy span{
+
+.main-copy span {
     display: flex;
     border: 1px solid #162645;
 
 }
-.footer-page-section-div{    
+
+.footer-page-section-div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -881,40 +885,40 @@ color: #c8c8c9;
     gap: 10px;
 }
 
-.list-links-on-footer ul li{
+.list-links-on-footer ul li {
     display: flex;
     gap: 10px;
     font-size: 14px;
-    color: #c8c8c9;     
+    color: #c8c8c9;
 }
 
-.inside-footer-links-sub p{
+.inside-footer-links-sub p {
     font-size: 16px;
     letter-spacing: .6px;
     font-weight: 600;
 }
 
-.line{
+.line {
     margin: 2% 0%;
 }
 
-.copy-right-sections{
+.copy-right-sections {
     display: flex;
     justify-content: space-between;
     padding: 1% 5%;
     margin-bottom: 2%;
 }
 
-.copy-links{
+.copy-links {
     font-size: 14px;
 }
 
-.list-links-on-footer ul li{
+.list-links-on-footer ul li {
 
     width: fit-content;
 }
 
-.list-links-on-footer ul li:hover{
+.list-links-on-footer ul li:hover {
     color: #F34A31;
 }
 
@@ -925,20 +929,20 @@ color: #c8c8c9;
 
 @media only screen and (max-width: 800px) {
 
-    .pages {       
+    .pages {
         width: 70%;
         display: none;
     }
 
-    .pages ul li{
+    .pages ul li {
         font-size: 13px;
     }
 
-     .pages ul li button{
+    .pages ul li button {
         font-size: 13px;
-     }
+    }
 
-    .buttons{
+    .buttons {
         width: 20%;
         display: none;
     }
@@ -948,12 +952,12 @@ color: #c8c8c9;
         width: 90%;
     }
 
-    .company-discripction{
+    .company-discripction {
         font-size: 15px;
         width: 90%;
     }
 
-    .main-poster-buttons{
+    .main-poster-buttons {
         width: 45%;
         font-size: 14px;
     }
@@ -964,113 +968,119 @@ color: #c8c8c9;
         width: 40%;
     }
 
-    .enroll-now{
-          font-size: 14px;
+    .enroll-now {
+        font-size: 14px;
         padding: 10px;
         width: 40%;
     }
 
-    .about-us-hero{
+    .about-us-hero {
         padding: 5%;
         flex-direction: column;
         gap: 20px;
     }
 
-    .wrapper{
+    .wrapper {
         padding: 2% 1%;
     }
 
-    .left-side-about-us{
+    .left-side-about-us {
         width: 100%;
     }
 
     .para-about-us-hero-heading {
         font-size: 1.4rem;
     }
-    
-.right-side-about-us {
-    
-    width: 100%;
-   
+
+    .right-side-about-us {
+
+        width: 100%;
+
+    }
+
+    .image-of-persion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-program {
+        flex-direction: column;
+        padding: 5% 0%;
+    }
+
+    .left-side-our-program {
+        width: 90%;
+    }
+
+    .right-side-our-program {
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    .course_data {
+        padding: 5%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-ua-top-section {
+        flex-direction: column;
+    }
+
+    .right-side-contact-us {
+        margin-top: 5%;
+        width: 96%;
+    }
+
+    .content-about-us-hero ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .main-copy {
+
+        width: 79%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .why-choose-us-section-main {
+        padding: 2%;
+    }
+
+    .copy-right-sections {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 }
 
-.image-of-persion{    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.our-program{
-    flex-direction: column;
-     padding: 5% 0%;
-}
 
-.left-side-our-program{
-    width: 90%;
-}
-.right-side-our-program {
-    margin-top: 5%;
-    width: 90%;
-}
-
-.course_data{
-     padding: 5%;
-    grid-template-columns: repeat(2 , 1fr);
-}
-
-.contact-ua-top-section{
-    flex-direction: column;
-}
-
-.right-side-contact-us{
-    margin-top: 5%;
-    width: 96%;
-}
-
-.content-about-us-hero ul{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.footer-links {
-    grid-template-columns: repeat(3 , 1fr);
-    gap: 20px;
-}
-.main-copy{
-   
-    width: 79%;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.why-choose-us-section-main{
-    padding: 2%;
-}
-
-.copy-right-sections{
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-}
-}
-
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 
     .top-nev {
         flex-direction: column;
         gap: 10px;
         display: none;
-        
+
     }
-    .contact-details{
+
+    .contact-details {
         padding: 5% 0%;
         width: 100%;
         justify-content: space-between;
     }
 
     .contact-details ul {
-      
+
         width: 100%;
         font-size: 20px;
     }
@@ -1081,82 +1091,88 @@ color: #c8c8c9;
         display: flex;
         gap: 20px;
         justify-content: center;
-        margin-bottom: 3%;      
-     }
+        margin-bottom: 3%;
+    }
 
-     .logo{
+    .logo {
         width: 20%;
-     }
+    }
 
-    .social-media-links ul{
+    .social-media-links ul {
         gap: 10px;
         font-size: 2rem;
     }
 
-    .company-discripction-heading{
+    .company-discripction-heading {
         font-size: 2rem;
     }
 
-    .company-discripction{
-      
+    .company-discripction {
+
         letter-spacing: 1px;
         font-size: 14px;
     }
 
-        .main-poster-buttons{
-            width: 90%;
-        }
+    .main-poster-buttons {
+        width: 90%;
+    }
 
-    .about-us-hero{
+    .about-us-hero {
         padding: 5%;
     }
 
-    .image-of-persion img{
-            width: 95%;
-    height: 224px;
+    .image-of-persion img {
+        width: 95%;
+        height: 224px;
     }
 
-    .posters-adv{
+    .posters-adv {
         display: grid;
-        grid-template-columns: repeat(1 , 1fr);
-         gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
-    .main-img-posters-adv{
+    .main-img-posters-adv {
         width: 100%;
-       
+
     }
 
     .content-about-us-hero ul {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .why-choose-us-section ul {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .instructor-image-top-class {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .instructor-images{
+
+    .submit-contact-us{
+        width: 50%;
+    }
+
+    .instructor-images {
         width: 100%;
     }
 
     .social-media-of-teachers ul {
         font-size: 2rem;
     }
-        .footer-links {
-            grid-template-columns: repeat(2,1fr);
-        }
 
-        .history-and-social-meadia-links-footer{
-            margin-top: 15%;
-        }
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-        .course_data {
-            grid-template-columns: repeat(1, 1fr);
-        }
+    .history-and-social-meadia-links-footer {
+        margin-top: 15%;
+    }
+
+    .course_data {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
 
