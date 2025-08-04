@@ -6,7 +6,12 @@ import { IoIosStar } from "react-icons/io";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { PiChalkboardTeacherThin } from "react-icons/pi";
 import { MdOutlineSecurity } from "react-icons/md";
-function CourseSection() {
+import { PiFacebookLogo } from "react-icons/pi";
+import { FaWhatsapp } from "react-icons/fa6";
+import { IoLogoInstagram } from "react-icons/io";
+import { CiLinkedin } from "react-icons/ci";
+import { SlSocialTwitter } from "react-icons/sl";
+function CourseSection({contactUs}) {
     // const [courseData , setCourseData] = useState(Course)
     return (
         <>
@@ -48,6 +53,19 @@ function CourseSection() {
 
                 </div>
 
+                <div className="Course-heading">
+
+                     <div className="about-us-sub-heading">
+                            <p>OUR COURSES</p>
+                        </div>
+                    
+                     <div className="content-our-course">
+                            <p>What would you like to <span className="color">  learn?</span></p>
+                        </div>
+                    
+                    {/* <p className="course-para">Best Course we provide To you for make your dream job true </p> */}
+                </div>
+
                 <div className="course_data">
                     {
                         Course.map((data) => (
@@ -82,7 +100,7 @@ function CourseSection() {
                                 <div className="course-cards-buttons">
 
                                     <button>Course Details </button>
-                                    <button>Enquiry Now</button>
+                                    <button onClick={()=>contactUs.current.scrollIntoView({behaviour:"smooth"})}>Enquiry Now</button>
 
                                 </div>
 
@@ -91,7 +109,12 @@ function CourseSection() {
                 </div>
 
 
-                <div className="why-choose-us-section-main">
+             
+
+
+            </div>
+
+               <div className="why-choose-us-section-main">
                     <div className="overlay">
                         <div className="our-program ">
 
@@ -131,6 +154,90 @@ function CourseSection() {
 
                         </div>
                     </div>
+
+                </div>
+
+            <div className="meet-our-team-section">
+                <div className="meet-our-team">
+
+                    <div className="our-team-heading">
+                        <p>MEET OUR INSTRUCTORS</p>
+                    </div>
+
+                    <div className="our-team-para">
+                        <p>Empowering Minds, Inspiring Success: Meet our expert instructors at SGACE Learning. Experience excellence in education with industry-leading professionals dedicated to unlocking your full potential.</p>
+                    </div>
+
+                    <div className="instructor-image-top-class">
+                        <div className="instructor-images">
+                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237306/smiling-female-student-doing-homework-desk-1414x1536_my0vpk.jpg">
+
+                            </img>
+
+
+                            <div className="teacher-name-and-occ">
+
+                                <p className="t-name">Kavya Sharma</p>
+                                <p className="t-occ">Professor</p>
+
+
+                            </div>
+
+                            <div className="social-media-of-teachers">
+                                <ul>
+                                    <li><PiFacebookLogo /></li>
+                                    <li><IoLogoInstagram /></li>
+                                    <li><CiLinkedin /></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="instructor-images">
+                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237288/successful-businessman-1414x1536_mjuwfg.jpg">
+                            </img>
+
+                            <div className="teacher-name-and-occ">
+
+                                <p className="t-name">Krishna Gopal</p>
+                                <p className="t-occ">Professor</p>
+
+                            </div>
+
+                            <div className="social-media-of-teachers">
+                                <ul>
+                                    <li><PiFacebookLogo /></li>
+                                    <li><IoLogoInstagram /></li>
+                                    <li><CiLinkedin /></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="instructor-images">
+                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237280/confident-businessman-1414x1536_yvf2g5.jpg">
+                            </img>
+
+                            <div className="teacher-name-and-occ">
+
+                                <p className="t-name">Dipanshu Chauhan</p>
+                                <p className="t-occ">Professor</p>
+                            </div>
+
+                            <div className="social-media-of-teachers">
+                                <ul>
+
+                                    <li><PiFacebookLogo /></li>
+                                    <li><IoLogoInstagram /></li>
+                                    <li><CiLinkedin /></li>
+                                 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
             </div>

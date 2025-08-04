@@ -35,7 +35,7 @@ const Course = [
     id: 5,
     image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754145124/DeWatermark.ai_1754145075513_ibh9lc.jpg",
     name: "CERTIFICATION IN AIR HOSTESS",
-    price: "28,000",
+    price: "68,000",
     courseDetails: "Trains in airline hospitality, inflight service, and safety. Boosts job chances as cabin crew, ideal for aspiring air hostesses.",
     rating: "5",
   },
@@ -43,7 +43,7 @@ const Course = [
     id: 6,
     image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
     name: "CERTIFICATION IN CRUISE SHIP",
-    price: "28,000",
+    price: "36,500",
     courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service.",
     rating: "4",
   }

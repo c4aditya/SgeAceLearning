@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
-function NavBar() {
+function NavBar({aboutUs , ourCourse , contactUs , footer }) {
     return (
         <>
             <section>
@@ -39,10 +39,11 @@ function NavBar() {
                         <div className="pages">
                             <ul>
                                 <li>HOME</li>
-                                <li>ABOUT US</li>
-                                <li>TRANING PROGRAM</li>
-                                <li>CONTACT US</li>
-                                <li>TUTORIALS</li>
+                                <li> <button onClick={()=>aboutUs.current.scrollIntoView({ behavior :"smooth"})}> ABOUT US </button> </li>
+                                <li><button onClick={()=> ourCourse.current.scrollIntoView({ behavior: "smooth" })} >TRANING PROGRAM </button></li>
+                                 <li><button onClick={()=> contactUs.current.scrollIntoView({ behavior: "smooth" })} >CONTACT US </button></li>
+                                 <li><button onClick={()=> footer.current.scrollIntoView({ behavior: "smooth" })} >MORE INFO </button></li>
+                              
                             </ul>
                         </div>
 

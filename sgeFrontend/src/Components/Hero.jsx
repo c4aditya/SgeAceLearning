@@ -1,9 +1,23 @@
 import NavBar from "./Navbar";
 import CourseSection from "./Courses/Course";
+import ContactUs from "./Contactus";
+import Footer from "./Footer";
+import { useRef } from "react";
+
 function Hero(){
+    const aboutUsref = useRef(null);
+    const ourCourses = useRef(null);
+    const contactUs = useRef(null);
+    const footer = useRef(null)
   return(
   <>
-  <NavBar/>
+  <NavBar
+    aboutUs ={aboutUsref}
+    ourCourse = {ourCourses}
+    contactUs ={contactUs}
+    footer = {footer}
+
+  />
 
   <section>
     <div className="main-hero-section">
@@ -15,8 +29,7 @@ function Hero(){
         </div>
 
         <div className="company-discripction-heading">
-           <p>Empowering Dreams Through Education</p>
-      
+           <p>Empowering Dreams Through Education</p>      
         </div>
 
         <div className="company-discripction">
@@ -24,8 +37,8 @@ function Hero(){
         </div>
 
         <div className="main-poster-buttons">
-            <button className="enroll-now">See Courses</button>
-            <button className="enquiry-now">Enquiry Now</button>
+            <button onClick={()=>ourCourses.current.scrollIntoView({behavior:"smooth"})} className="enroll-now">See Courses</button>
+            <button  onClick={()=>contactUs.current.scrollIntoView({behavior : "smooth"})} className="enquiry-now">Enquiry Now</button>
         </div>
     </div>
      
@@ -37,9 +50,9 @@ function Hero(){
 
   <section>
 
-    <div className="about-us-section-start">
+    <div  ref={aboutUsref} className="about-us-section-start">
         <div className="wrapper">
-        <div className="about-us-hero">
+        <div  className="about-us-hero">
             <div className="left-side-about-us">
 
                 <div className="about-us-sub-heading">
@@ -96,11 +109,28 @@ function Hero(){
   {/* ---------------------------------------------------------course section start-------------------------------------------------------------- */}
 
   <section>
-   <CourseSection />
+  <div ref={ourCourses}>  
+   <CourseSection
+    contactUs ={contactUs}
+   />
+     </div>
   </section>
 
-  {/* Course section end */}
+  {/*------------------------------------------------------------ Course section end ---------------------------------------------------------------*/}
 
+{/*--------------------------------------------------------------- Contact us section-------------------------------------------------------------- */}
+<div ref={contactUs}>
+<ContactUs />
+</div>
+{/*--------------------------------------------------------------- contsct us section ends ---------------------------------------------------------*/}
+
+{/* ----------------------------------------------------------------Footer section start ---------------------------------------------------------- */}
+
+<div ref={footer}>
+    <Footer/>
+</div>
+
+{/* ----------------------------------------------------------------Footer section end ---------------------------------------------------------- */}
 
 
   </>
