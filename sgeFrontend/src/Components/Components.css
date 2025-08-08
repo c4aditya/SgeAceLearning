@@ -1162,7 +1162,14 @@ input[type="number"] {
 
     .instructor-image-top-class {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .social-media-of-teachers ul{
+        gap: 5px;
     }
 
     .submit-contact-us{
@@ -1170,11 +1177,11 @@ input[type="number"] {
     }
 
     .instructor-images {
-        width: 100%;
+        width: 90%;
     }
 
     .social-media-of-teachers ul {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .footer-links {
