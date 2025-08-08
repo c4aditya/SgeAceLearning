@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import { motion } from "framer-motion";
 import Course from "./CourseData";
 import { MdFlight } from "react-icons/md";
 import { FaMedal } from "react-icons/fa";
@@ -11,8 +12,11 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
-function CourseSection({contactUs}) {
+import FramerMotion from "../FramerMotion";
+function CourseSection({ contactUs }) {
     // const [courseData , setCourseData] = useState(Course)
+    const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
+
     return (
         <>
             <div className="wrapper">
@@ -20,7 +24,12 @@ function CourseSection({contactUs}) {
 
                 <div className="our-program">
 
-                    <div className="left-side-our-program">
+                    <motion.div
+                        variants={leftVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="left-side-our-program">
                         <div className="about-us-sub-heading">
                             <p>OUR PROGRAMS</p>
                         </div>
@@ -33,43 +42,63 @@ function CourseSection({contactUs}) {
                             <p>We offer the best courses to launch your career in the aviation industry, taught by highly experienced teachers from the field. Learn from experts and get industry-ready with our specialized training.</p>
                         </div>
 
-                        <div className="provide">
+                        <motion.div
+                            variants={bottomVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                            className="provide">
                             <ul>
                                 <li><span>< MdFlight /></span> Training Programs</li>
                                 <li><span><FaMedal /></span>Certifications Programs</li>
                             </ul>
-                        </div>
+                        </motion.div>
 
 
-                    </div>
+                    </motion.div>
 
-                    <div className="right-side-our-program">
+                    <motion.div
+                        variants={rightVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="right-side-our-program">
 
                         <img src="https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/13.jpg"></img>
 
 
+                    </motion.div>
+
+
+                </div>
+
+                <motion.div
+                    variants={leftVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="Course-heading">
+
+                    <div className="about-us-sub-heading">
+                        <p>OUR COURSES</p>
                     </div>
 
+                    <div className="content-our-course">
+                        <p>What would you like to <span className="color">  learn?</span></p>
+                    </div>
 
-                </div>
-
-                <div className="Course-heading">
-
-                     <div className="about-us-sub-heading">
-                            <p>OUR COURSES</p>
-                        </div>
-                    
-                     <div className="content-our-course">
-                            <p>What would you like to <span className="color">  learn?</span></p>
-                        </div>
-                    
                     {/* <p className="course-para">Best Course we provide To you for make your dream job true </p> */}
-                </div>
+                </motion.div>
 
                 <div className="course_data">
                     {
                         Course.map((data) => (
-                            <div className="course-card">
+                            <motion.div
+                                variants={bottomVariants}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                className="course-card">
 
                                 <div className="course-images">
                                     <img src={data.image} />
@@ -100,25 +129,33 @@ function CourseSection({contactUs}) {
                                 <div className="course-cards-buttons">
 
                                     <button>Course Details </button>
-                                    <button onClick={()=>contactUs.current.scrollIntoView({behaviour:"smooth"})}>Enquiry Now</button>
+                                    <button onClick={() => contactUs.current.scrollIntoView({ behaviour: "smooth" })}>Enquiry Now</button>
 
                                 </div>
 
-                            </div>
+                            </motion.div>
                         ))}
                 </div>
 
 
-             
+
 
 
             </div>
 
-               <div className="why-choose-us-section-main">
-                    <div className="overlay">
-                        <div className="our-program ">
+            <div className="why-choose-us-section-main">
+                <div className="overlay">
+                    <div className="our-program ">
 
-                            <div className="left-side-our-program">
+                        <div className="left-side-our-program">
+                            <motion.div
+                                variants={leftVariants}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                            >
+
+
                                 <div className="about-us-sub-heading ">
                                     <p>WHY CHOOSE US </p>
                                 </div>
@@ -130,8 +167,17 @@ function CourseSection({contactUs}) {
                                 <div className="content-about-us-hero white">
                                     <p>We are committed to providing top-quality education that prepares you for a successful career in the aviation and hospitality sectors. Our programs are designed and delivered by industry veterans who bring real-world knowledge and experience into the classroom, ensuring you gain practical skills that employers value..</p>
                                 </div>
+                            </motion.div>
 
-                                <div className="provide why-choose-us-section">
+                            <div className="provide why-choose-us-section">
+                                <motion.div
+                                    variants={bottomVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.3 }}
+                                >
+
+
                                     <ul>
                                         <li><span><PiChalkboardTeacherThin /></span> Flexible Scheduling</li>
                                         <li><span><FaMedal /></span>Varified Certificates </li>
@@ -139,37 +185,55 @@ function CourseSection({contactUs}) {
                                         <li><span><MdOutlineSecurity /></span>State-of-the-Art Facilities</li>
 
                                     </ul>
-                                </div>
-
-
-                            </div>
-
-                            <div className="right-side-our-program">
-
-                                <img src="https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/8.jpg"></img>
-
-
+                                </motion.div>
                             </div>
 
 
                         </div>
-                    </div>
 
+                        <motion.div
+                            variants={rightVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                            className="right-side-our-program">
+
+                            <img src="https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/8.jpg"></img>
+
+
+                        </motion.div>
+
+
+                    </div>
                 </div>
+
+            </div>
 
             <div className="meet-our-team-section">
                 <div className="meet-our-team">
+                    <motion.div
+                        variants={leftVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
 
-                    <div className="our-team-heading">
-                        <p>MEET OUR INSTRUCTORS</p>
-                    </div>
 
-                    <div className="our-team-para">
-                        <p>Empowering Minds, Inspiring Success: Meet our expert instructors at SGACE Learning. Experience excellence in education with industry-leading professionals dedicated to unlocking your full potential.</p>
-                    </div>
+                        <div className="our-team-heading">
+                            <p>MEET OUR INSTRUCTORS</p>
+                        </div>
 
+                        <div className="our-team-para">
+                            <p>Empowering Minds, Inspiring Success: Meet our expert instructors at SGACE Learning. Experience excellence in education with industry-leading professionals dedicated to unlocking your full potential.</p>
+                        </div>
+                    </motion.div>
                     <div className="instructor-image-top-class">
-                        <div className="instructor-images">
+                        <motion.div
+                            variants={bottomVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                             className="instructor-images">
                             <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237306/smiling-female-student-doing-homework-desk-1414x1536_my0vpk.jpg">
 
                             </img>
@@ -188,12 +252,17 @@ function CourseSection({contactUs}) {
                                     <li><PiFacebookLogo /></li>
                                     <li><IoLogoInstagram /></li>
                                     <li><CiLinkedin /></li>
-                                    
+
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="instructor-images">
+                           <motion.div
+                            variants={bottomVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                             className="instructor-images">
                             <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237288/successful-businessman-1414x1536_mjuwfg.jpg">
                             </img>
 
@@ -209,12 +278,17 @@ function CourseSection({contactUs}) {
                                     <li><PiFacebookLogo /></li>
                                     <li><IoLogoInstagram /></li>
                                     <li><CiLinkedin /></li>
-                                    
+
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="instructor-images">
+                           <motion.div
+                            variants={bottomVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                             className="instructor-images">
                             <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237280/confident-businessman-1414x1536_yvf2g5.jpg">
                             </img>
 
@@ -230,10 +304,10 @@ function CourseSection({contactUs}) {
                                     <li><PiFacebookLogo /></li>
                                     <li><IoLogoInstagram /></li>
                                     <li><CiLinkedin /></li>
-                                 
+
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
 
