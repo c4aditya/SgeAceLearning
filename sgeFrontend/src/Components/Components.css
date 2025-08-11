@@ -27,7 +27,6 @@ html, body {
 
 }
 
-
 .contact-details {
     width: 30%;
     display: flex;
@@ -118,6 +117,10 @@ html, body {
     justify-content: space-between;
 }
 
+.hamburger{
+    display: none;
+}
+
 .login-button {
     width: 45%;
 }
@@ -136,8 +139,6 @@ html, body {
     font-weight: 600;
 }
 
-
-
 .login-button button {
     width: 100%;
     padding: 7px;
@@ -147,6 +148,93 @@ html, body {
     color: white;
     border: none;
     border-radius: 5px;
+
+}
+
+.main-side-bar{
+    display: none;
+}
+
+.side-nav-bar{
+  
+   position: absolute;
+   width: 100%;
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #162645;
+    color: white;
+    
+
+}
+
+
+.pages-list-side-bar{
+    
+  
+}
+
+.pages-list-side-bar ul{
+    list-style: none;
+    
+}
+
+.pages-list-side-bar ul li {
+    display: flex;
+    gap: 10px;
+    padding: 2%;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.side-bar-buttons{
+    
+    display: flex;
+    gap: 10px;
+    padding: 2%;
+}
+
+.mob-login-button{
+    
+    width: 20%;
+ 
+}
+
+.mob-login-button button{
+    width: 100%;
+    padding: 8%;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.s button{
+ background-color: white;
+ border: 1px solid white;
+}
+
+.l button {
+   
+    border: none;
+    color: white;
+    background-color: #F34A31;
+
+}
+
+.line-side-bar{
+    border: 1px solid #F34A31;
+}
+
+.social-media-list-side-bar ul{
+
+    list-style: none;
+    display: flex;
+    padding: 2%;
+ 
+    gap: 20px;
+    font-size: 2rem;
 
 }
 
@@ -937,12 +1025,22 @@ input[type="number"] {
     color: #F34A31;
 }
 
+.ham{
+    display: none;
+}
+
 /* ---------------------------------------------------------------------------------------hero section ends --------------------------------------------------------------------------------------- */
 
 
 /*-----------------------------------------------------------------------------------------Responsive css start ------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
+
+  
+
+    .logo{
+        width: 10%;
+    }
 
     .pages {
         width: 70%;
@@ -957,10 +1055,43 @@ input[type="number"] {
         font-size: 13px;
     }
 
-    .buttons {
-        width: 20%;
+    
+
+    .signup-button{
+        display: none;
+
+    }
+
+    .login-button{
         display: none;
     }
+
+    .ham{
+        display: block;
+    }
+
+    .hamburger{
+        display: flex;
+        font-size: 2rem;        
+        align-items: center;
+        justify-items: center;
+        
+    }
+
+    .main-side-bar{
+        display: block;
+    }
+
+    .hamburger button{
+        background-color: white;
+        border: none;
+    }
+
+      .hamburger button svg{
+        display: flex;
+        font-size: 2.6rem;
+        color: #F34A31;
+      }
 
     .company-discripction-heading {
         font-size: 2.5rem;
