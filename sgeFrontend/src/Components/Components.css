@@ -1032,6 +1032,79 @@ input[type="number"] {
 /* ---------------------------------------------------------------------------------------hero section ends --------------------------------------------------------------------------------------- */
 
 
+/* ------------------------------------------------------------------------------------ Student Review section start -------------------------------------------------------------------------------- */
+.center{
+    text-align: center;
+}
+.testmonial{
+    background-color: white;
+}
+.student-review-main-div{
+   
+    display: flex;
+    gap: 10px;
+    margin-top: 5%;
+   
+}
+
+.main-student-div{
+    padding: 10px;
+    border: 1px solid #081021;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.student-image {
+    border: 3px solid #F34A31;
+    border-radius: 100%;    
+    width: 30%;
+    padding: 5px;
+}
+
+.student-image img {
+    width: 100%;
+    border-radius: 100%;
+    
+}
+
+.student-message {
+
+    height: 150px;
+}
+
+.student-message p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: #152038;
+}
+
+.student-name-and-position{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+.student-name{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    color: #152038;
+}
+
+.student-position{
+       font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    color: #152038;
+}
+/* ------------------------------------------------------------------------------------ Student Review ends ------------------------------------------------------------------------------------------ */
+
 /*-----------------------------------------------------------------------------------------Responsive css start ------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {

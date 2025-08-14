@@ -1,0 +1,163 @@
+/*  All pages css annd responsive of page is come in side the page.css  */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*---------------------------------------------------------------About us Css start  ------------------------------------------------------------------ */
+
+.left-contnet-para {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-poster-section {
+    background: url("https://res.cloudinary.com/dxgmovaih/image/upload/v1755081610/nasa-Q1p7bh3SHj8-unsplash_qavbqo.jpg");
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    
+}
+
+.main-content-poster-page {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.per-page-poster-content {
+    width: 68%;
+    font-weight: 600;
+}
+
+.per-page-poster-content p {
+    font-size: 4rem;  
+}
+
+.future-icon{
+    border: 2px solid #F34A31;
+   
+    padding: 10px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.future-icon img{
+    width: 100%;
+    
+}
+.per-poster-para {
+    font-size: 16px;
+    line-height: 1.5rem;
+    letter-spacing: .4px;
+    width: 52%;
+    text-align: justify;
+}
+
+#globe-container img {
+    width: 100%;
+}
+
+.our-future {
+    background-color: #081021;
+    border: 1px solid black;
+    display: flex;
+    padding: 5%;
+    gap: 20px;
+}
+
+.image-and-heading-future {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.future-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #081021;
+}
+
+.main-class-future {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    width: 35%;
+
+}
+
+.varified-by-main-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.future-para p {
+    text-align: center;
+    letter-spacing: .9px;
+    line-height: 1.5rem;
+    font-size: 14px;
+    color: #152038;
+
+}
+
+.certified-by{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.varify-by-name-and-subnames{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 30px;
+    margin-top: 4%;
+}
+
+.varify-by-section{
+    padding: 5%;
+    
+    background-color: #F6F7F8;
+}
+.certified-name p{
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #152038;
+
+}
+.sort-form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.full-form{
+    color: #152038;
+    font-size: 14px;
+}
+
+.certified-icon svg{
+    fill: #F34A31;
+    font-size: 1.2rem;
+}
+
+/* -----------------------------------------------------------------------------------------About us css Ends --------------------------------------------------------------------------------------------------------------------------------------------------------------- */

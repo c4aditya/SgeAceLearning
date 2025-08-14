@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import NavBar from "./Navbar";
 import CourseSection from "./Courses/Course";
 import ContactUs from "./Contactus";
@@ -9,19 +9,11 @@ import FramerMotion from "./FramerMotion";
 const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
 
 function Hero() {
-  const aboutUsref = useRef(null);
-  const ourCourses = useRef(null);
-  const contactUs = useRef(null);
-  const footer = useRef(null);
+
 
   return (
     <>
-      <NavBar
-        aboutUs={aboutUsref}
-        ourCourse={ourCourses}
-        contactUs={contactUs}
-        footer={footer}
-      />
+     
 
       <section>
         <div className="main-hero-section">
@@ -58,24 +50,11 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              className="main-poster-buttons"
-            >
-              <button
-                onClick={() =>
-                  ourCourses.current.scrollIntoView({ behavior: "smooth" })
-                }
-                className="enroll-now"
-              >
-                See Courses
-              </button>
-              <button
-                onClick={() =>
-                  contactUs.current.scrollIntoView({ behavior: "smooth" })
-                }
-                className="enquiry-now"
-              >
-                Enquiry Now
-              </button>
+              className="main-poster-buttons">
+
+              <button className="enroll-now">  See Courses  </button>
+              <button className="enquiry-now" > Enquiry Now </button>
+
             </motion.div>
           </div>
         </div>
@@ -83,7 +62,7 @@ function Hero() {
 
       {/* About Us Section */}
       <section>
-        <div ref={aboutUsref} className="about-us-section-start">
+        <div className="about-us-section-start">
           <div className="wrapper">
             <div className="about-us-hero">
               {/* Left side from left */}
@@ -156,45 +135,42 @@ function Hero() {
             viewport={{ once: true, amount: 0.3 }}
             className="main-img-posters-adv"
           >
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754132528/3_km3prp.png" alt="Poster 1" />
+            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754915677/Blue_and_Yellow_Modern_Online_Learning_Courses_LinkedIn_Post_1_iznsqf.png" alt="Poster_1" />
           </motion.div>
 
           <motion.div
-          variants={bottomVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="main-img-posters-adv">
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754132525/2_vxmdrk.png" alt="Poster 2" />
+            variants={bottomVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="main-img-posters-adv">
+            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754915677/Blue_and_Yellow_Modern_Online_Learning_Courses_LinkedIn_Post_1_iznsqf.png" alt="Poster 2" />
           </motion.div>
 
           <motion.div
-          variants={rightVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="main-img-posters-adv">
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754132522/1_rw4x45.png" alt="Poster 3" />
+            variants={rightVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="main-img-posters-adv">
+            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754915677/Blue_and_Yellow_Modern_Online_Learning_Courses_LinkedIn_Post_1_iznsqf.png" alt="Poster 3" />
           </motion.div>
         </div>
       </section>
 
       {/* Course section */}
       <section>
-        <div ref={ourCourses}>
-          <CourseSection contactUs={contactUs} />
+        <div>
+          <CourseSection />
         </div>
       </section>
 
       {/* Contact Us section */}
-      <div ref={contactUs}>
+      <div >
         <ContactUs />
       </div>
 
-      {/* Footer */}
-      <div ref={footer}>
-        <Footer />
-      </div>
+    
     </>
   );
 }

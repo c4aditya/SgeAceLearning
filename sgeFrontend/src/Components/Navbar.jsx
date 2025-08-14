@@ -7,13 +7,13 @@ import { SlSocialTwitter } from "react-icons/sl";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-
+import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-function NavBar({ aboutUs, ourCourse, contactUs, footer }) {
+function NavBar({ ourCourse, contactUs, footer }) {
 
 
 
-
+    const Nevigate = useNavigate();
     const [hamburger, setHamburger] = useState(false);
     const [sideNavBar, setSideNavBar] = useState(false)
 
@@ -93,9 +93,9 @@ function NavBar({ aboutUs, ourCourse, contactUs, footer }) {
 
                             <div className="pages">
                                 <ul>
-                                    <li>HOME</li>
-                                    <li> <button onClick={() => aboutUs.current.scrollIntoView({ behavior: "smooth" })}> ABOUT US </button> </li>
-                                    <li><button onClick={() => ourCourse.current.scrollIntoView({ behavior: "smooth" })} >TRANING PROGRAM </button></li>
+                                    <li><button onClick={() =>Nevigate("/")}> HOME </button></li>
+                                    <li> <button onClick={() =>Nevigate("/aboutus")}> ABOUT US </button> </li>
+                                    <li><button onClick={() =>Nevigate("/aboutus")} >TRANING PROGRAM </button></li>
                                     <li><button onClick={() => contactUs.current.scrollIntoView({ behavior: "smooth" })} >CONTACT US </button></li>
                                     <li><button onClick={() => footer.current.scrollIntoView({ behavior: "smooth" })} >MORE INFO </button></li>
 
@@ -149,7 +149,7 @@ function NavBar({ aboutUs, ourCourse, contactUs, footer }) {
                                         <ul>
 
                                         <li onClick={() => {closeSideBar();  window.scrollTo({ top: 0, behavior: "smooth" }); }}>Home</li>
-                                        <li onClick={() => {closeSideBar();  aboutUs.current.scrollIntoView({ behavior: "smooth" });  }}>About us</li>
+                                        <li onClick={() => Nevigate("/aboutus") }>About us</li>
                                         <li onClick={() => {closeSideBar();  contactUs.current.scrollIntoView({ behavior: "smooth" });  }}>Contact us</li>
                                         <li onClick={() => { ourCourse.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>Courses</li>
                                         <li onClick={() => { footer.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>More</li>
