@@ -13,10 +13,11 @@ import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
 import FramerMotion from "../FramerMotion";
+import { useNavigate } from "react-router-dom";
 function CourseSection({ contactUs }) {
     // const [courseData , setCourseData] = useState(Course)
     const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
-
+     const nevigate = useNavigate();
     return (
         <>
             <div className="wrapper">
@@ -106,9 +107,7 @@ function CourseSection({ contactUs }) {
 
                                 <hr className="card-hr"></hr>
 
-                                <div className="course-rating">
-                                    <p><span><IoIosStar /></span>{data.rating}</p>
-                                </div>
+                               
 
                                 <div className="course-name">
 
@@ -118,7 +117,11 @@ function CourseSection({ contactUs }) {
 
 
                                 <div className="course-rating">
-                                    <p><span><FaIndianRupeeSign /></span>{data.price} /- </p>
+                                 
+                                    
+                                    <p><span><IoIosStar /></span>{data.rating}</p>
+                                       <p><span><FaIndianRupeeSign /></span>{data.price} /- </p>
+                
                                 </div>
 
 
@@ -128,7 +131,7 @@ function CourseSection({ contactUs }) {
 
                                 <div className="course-cards-buttons">
 
-                                    <button>Course Details </button>
+                                    <button onClick={() => nevigate("/courseDeatils" , {state : data})}>Course Details </button>
                                     <button onClick={() => contactUs.current.scrollIntoView({ behaviour: "smooth" })}>Enquiry Now</button>
 
                                 </div>

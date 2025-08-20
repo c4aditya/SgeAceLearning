@@ -9,19 +9,48 @@ import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-function NavBar({ ourCourse, contactUs, footer }) {
+import { IoStar } from "react-icons/io5";
+import FramerMotion from "./FramerMotion";
+const { rightVariants } = FramerMotion;
+
+function NavBar() {
 
 
 
     const Nevigate = useNavigate();
     const [hamburger, setHamburger] = useState(false);
-    const [sideNavBar, setSideNavBar] = useState(false)
+    const [sideNavBar, setSideNavBar] = useState(false);
+    const [counclerFrom, setCounclerFrom] = useState(false);
 
     function handleHamBurger() {
         console.log("The ham burger button is clicked ")
         setHamburger(!hamburger)
         setSideNavBar(!sideNavBar)
     }
+
+    function handletoggleCouncler() {
+        console.log("The Councler button is clicked ")
+        setCounclerFrom(!counclerFrom)
+
+    }
+
+    // when form is open then background color will change for whole body 
+
+    useEffect(() => {
+        if (counclerFrom == true) {
+            document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [counclerFrom]);
+
+
 
 
     useEffect(() => {
@@ -93,10 +122,10 @@ function NavBar({ ourCourse, contactUs, footer }) {
 
                             <div className="pages">
                                 <ul>
-                                    <li><button onClick={() =>Nevigate("/")}> HOME </button></li>
-                                    <li> <button onClick={() =>Nevigate("/aboutus")}> ABOUT US </button> </li>
-                                    <li><button onClick={() =>Nevigate("/aboutus")} >TRANING PROGRAM </button></li>
-                                    <li><button onClick={() => contactUs.current.scrollIntoView({ behavior: "smooth" })} >CONTACT US </button></li>
+                                    <li><button onClick={() => Nevigate("/")}> HOME </button></li>
+                                    <li> <button onClick={() => Nevigate("/aboutus")}> ABOUT US </button> </li>
+                                    <li><button onClick={() => Nevigate("/aboutus")} >TRANING PROGRAM </button></li>
+                                    <li><button onClick={() => Nevigate("/contactUs")} >CONTACT US </button></li>
                                     <li><button onClick={() => footer.current.scrollIntoView({ behavior: "smooth" })} >MORE INFO </button></li>
 
                                 </ul>
@@ -104,14 +133,8 @@ function NavBar({ ourCourse, contactUs, footer }) {
 
                             <div className="buttons">
 
-
-
-                                <div className="signup-button">
-                                    <button>SignUp</button>
-                                </div>
-
                                 <div className="login-button">
-                                    <button>Login</button>
+                                    <button onClick={handletoggleCouncler}>Start Learning</button>
                                 </div>
 
                                 <div className="ham" onClick={handleHamBurger}>
@@ -148,11 +171,11 @@ function NavBar({ ourCourse, contactUs, footer }) {
 
                                         <ul>
 
-                                        <li onClick={() => {closeSideBar();  window.scrollTo({ top: 0, behavior: "smooth" }); }}>Home</li>
-                                        <li onClick={() => Nevigate("/aboutus") }>About us</li>
-                                        <li onClick={() => {closeSideBar();  contactUs.current.scrollIntoView({ behavior: "smooth" });  }}>Contact us</li>
-                                        <li onClick={() => { ourCourse.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>Courses</li>
-                                        <li onClick={() => { footer.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>More</li>
+                                            <li onClick={() => { closeSideBar(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Home</li>
+                                            <li onClick={() => Nevigate("/aboutus")}>About us</li>
+                                            <li onClick={() => Nevigate("/contactUs")}>Contact us</li>
+                                            <li onClick={() => { ourCourse.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>Courses</li>
+                                            <li onClick={() => { footer.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>More</li>
 
                                         </ul>
 
@@ -197,6 +220,66 @@ function NavBar({ ourCourse, contactUs, footer }) {
                     </div>
 
                 </nav>
+
+            </section>
+
+            {counclerFrom && <div className="blur-overlay"></div>}
+
+            <section>
+
+
+
+                <div className="main-councler-from-section">
+                    {counclerFrom && (
+                        <div className="counclerForm">
+                            <div className="councler-form-content">
+                                
+                                <ul>
+                                    <li><span><IoStar /></span> Curriculum designed by industry leaders for maximum impact.</li>
+                                    <li><span><IoStar /></span> Master skills through interactive and immersive learning.</li>
+                                    <li><span><IoStar /></span> Access to exclusive project-based assignments.</li>
+                                    <li><span><IoStar /></span> Personalized mentorship and career guidance.</li>
+                                    <li><span><IoStar /></span> Flexible learning schedule to suit your pace.</li>
+                                </ul>
+                            </div>
+
+                            <div className="main-councler-from">
+                                <div className="heading-concler-form">
+                                    <p className="h">Let's Talk </p>
+                                </div>
+
+                                
+
+                                <div className="from-councler-form" >
+
+                                    <form>
+
+                                         <label>Full Name </label>
+                                        <input type="text" placeholder="Name"></input>
+
+                                          <label>Email </label>
+                                        <input type="email" placeholder="Your @email"></input>
+
+
+                                        <label>Contact Number </label>
+                                        <input type="number" placeholder="+91"></input>
+
+                                        <button className="conculer-submit">Request for call back </button>
+
+                                    </form>
+
+
+
+                                </div>
+
+                            </div>
+
+                            <div className="cross">
+                                <button onClick={() => setCounclerFrom(false)}> X </button>
+                            </div>
+                        </div>
+                    )}
+                </div>
 
             </section>
         </>

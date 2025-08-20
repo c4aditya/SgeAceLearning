@@ -15,7 +15,16 @@ function AboutUs() {
 
                 <div className="top-poster-section">
 
-                    <div className="main-content-poster-page">
+                    
+                     <motion.div
+                        variants={leftVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="main-content-poster-page"
+                    >
+                    
+                    
                         <div className="company-name">
                             <p>ABOUT US </p>
                         </div>
@@ -28,7 +37,7 @@ function AboutUs() {
 
                             <p>Part of the rich legacy of the Sge Ace Learnign Training Institute , we aim to transform education by creating programs delivered by leading industry practitioners</p>
                         </div>
-                    </div>
+                    </motion.div>
 
 
 
@@ -183,7 +192,16 @@ function AboutUs() {
 
             <section className="varify-by-section">
 
-                <div className="main-varified-section">
+              
+                 <motion.div
+                        variants={bottomVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                       className="main-varified-section"
+                    >
+
+               
 
                     <div className="varified-by-main-div">
                         <div className="about-us-sub-heading">
@@ -196,7 +214,9 @@ function AboutUs() {
                     </div>
 
                     <div className="varify-by-name-and-subnames">
-
+                       
+                        
+                     
                         <div className="certified-by">
 
                             <div className="sort-form">
@@ -264,6 +284,8 @@ function AboutUs() {
 
                             <hr></hr>
                         </div>
+
+                     
 
 
 
@@ -340,7 +362,7 @@ function AboutUs() {
                    
                     </div>
 
-                </div>
+                </motion.div>
 
             </section>
 

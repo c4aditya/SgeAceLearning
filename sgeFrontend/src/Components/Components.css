@@ -1,13 +1,16 @@
+@import "tailwindcss";
+
 * {
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
-    
-    
+
+
 }
 
-html, body {
-  overflow-x: hidden;
+html,
+body {
+    overflow-x: hidden;
 }
 
 
@@ -112,17 +115,20 @@ html, body {
 }
 
 .buttons {
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
+    width: 10%;
+
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
 .login-button {
-    width: 45%;
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .signup-button {
@@ -151,33 +157,30 @@ html, body {
 
 }
 
-.main-side-bar{
+.main-side-bar {
     display: none;
 }
 
-.side-nav-bar{
-  
-   position: absolute;
-   width: 100%;
-   height: 100%;
+.side-nav-bar {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: #162645;
     color: white;
-    
+
 
 }
 
 
-.pages-list-side-bar{
-    
-  
-}
+.pages-list-side-bar {}
 
-.pages-list-side-bar ul{
+.pages-list-side-bar ul {
     list-style: none;
-    
+
 }
 
 .pages-list-side-bar ul li {
@@ -189,20 +192,20 @@ html, body {
 
 }
 
-.side-bar-buttons{
-    
+.side-bar-buttons {
+
     display: flex;
     gap: 10px;
     padding: 2%;
 }
 
-.mob-login-button{
-    
+.mob-login-button {
+
     width: 20%;
- 
+
 }
 
-.mob-login-button button{
+.mob-login-button button {
     width: 100%;
     padding: 8%;
     font-size: 15px;
@@ -210,29 +213,29 @@ html, body {
     border-radius: 5px;
 }
 
-.s button{
- background-color: white;
- border: 1px solid white;
+.s button {
+    background-color: white;
+    border: 1px solid white;
 }
 
 .l button {
-   
+
     border: none;
     color: white;
     background-color: #F34A31;
 
 }
 
-.line-side-bar{
+.line-side-bar {
     border: 1px solid #F34A31;
 }
 
-.social-media-list-side-bar ul{
+.social-media-list-side-bar ul {
 
     list-style: none;
     display: flex;
     padding: 2%;
- 
+
     gap: 20px;
     font-size: 2rem;
 
@@ -240,13 +243,135 @@ html, body {
 
 /*------------------------------------------------------------------------------------- Nev bar sections ends---------------------------------------------------------------------------------- */
 
+/*------------------------------------------------------------------------------------- councler-from section css starts ------------------------------------------------------------------------*/
+/* App.css ya equivalent CSS file me */
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+ 
+
+}
+
+
+.counclerForm {
+    background-color:white;
+    
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    top: 60%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    padding: 10px;
+    width: 60%;
+
+}
+
+.councler-form-content{
+    border: 1px solid black;
+    width: 50%;
+    background-color: #081021;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.head{
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+}
+
+.councler-form-content ul li{ 
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+}
+
+.councler-form-content ul li span{
+    margin-top: 1%;
+    
+}
+
+.councler-form-content ul li span svg{
+    fill: #F34A31;
+}
+
+.conculer-submit{
+    margin-top: 5%;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #F34A31;
+    border-radius: 5px;
+    color: white;
+}
+.main-councler-from{  
+    display: flex;   
+    flex-direction: column;
+   
+    width: 60%;
+    padding: 10px;
+}
+
+.cross{    
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;   
+    border-radius: 100%;
+    background-color: #F34A31;
+    padding: 5px;
+}
+
+.from-councler-form form{ 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.from-councler-form form label{
+    color: #F34A31;
+    font-size: 16px;   
+}
+
+.from-councler-form form input{
+    padding: 5px;
+    width: 100%;
+    margin-top: 1%;  
+    border: 1px solid #152038;  
+}
+.h{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #162645;
+}
+
+
+
+/*-------------------------------------------------------------------------------------- councler from section ends------------------------------------------------------------------------------  */
 
 /* --------------------------------------------------------------------------------------Hero section starts ------------------------------------------------------------------------------------ */
 
 /* --------------------------------------------------------------------------------------poster section css start--------------------------------------------------------------------------------- */
 
 .main-hero-section {
-   overflow: hidden;
+    overflow: hidden;
     color: white;
     background: url("https://res.cloudinary.com/dxgmovaih/image/upload/v1754126712/17_eb2deh.jpg");
     background-size: cover;
@@ -372,7 +497,7 @@ html, body {
 }
 
 .right-side-about-us {
-   overflow: hidden;
+    overflow: hidden;
     width: 55%;
     justify-content: space-between;
     display: flex;
@@ -397,12 +522,11 @@ html, body {
 }
 
 .image-of-persion {
-    width: 50%;
+    width: 100%;
 }
 
 .image-of-persion img {
-    width: 80%;
-    height: 350px;
+    width: 90%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -471,7 +595,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
 .right-side-our-program {
@@ -512,18 +636,23 @@ html, body {
 
 .course-rating {
     display: flex;
+    justify-content: space-between;
 
 }
 
 .course-rating p {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     color: #162645;
-    font-weight: 600;
+    font-weight: 600;    
+    align-items: center;
+      font-size: 15px;
 }
 
 .course-rating p span svg {
     fill: #F34A31;
+    display: flex;
+    font-size: 15px;
 }
 
 .course_data {
@@ -537,18 +666,19 @@ html, body {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 2px;
+
 }
 
 .course-card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border: 1px light #162645;
+    gap: 5px;
+    border: 1px solid #162645;
+    border-radius: 5px;
     padding: 10px;
-    border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(75, 71, 71, 0.5);
+
 }
 
 .course-cards-buttons {
@@ -582,6 +712,165 @@ html, body {
 
 /* --------------------------------------------------------------------------------------course section ends ----------------------------------------------------------------------------------------- */
 
+
+/*---------------------------------------------------------------------------------------- course details section css start --------------------------------------------------------------------------- */
+
+.course-name-course-details p{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+
+.course-details-info ul {
+    display: flex;
+    gap: 15px;
+}
+
+.course-details-info ul li{
+    display: flex;    
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+
+    
+}
+
+
+.course-details-info ul li span svg {
+    display: flex;    
+    font-size: 15px;   
+    fill: #F34A31;
+    
+}
+
+.course-details-section{
+    display: flex;  
+        padding: 5%;
+    justify-content: space-between;
+}
+
+.about-job{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.course-details{
+    font-size: 14px;
+    line-height: 1.5rem;
+    letter-spacing: .4px;
+    color: #515355;
+}
+
+.about-job-p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #081021;
+    color: #F34A31;
+}
+.course-deatils-contents{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+
+.course-thumbnail {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course-thumbnail img{
+    width:100%;
+}
+
+.what-we-will-provide ul{
+     margin-top: 2%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+      font-size: 14px;
+    line-height: 1.5rem;
+    letter-spacing: .4px;
+    color: #515355;
+
+}
+
+.what-we-will-provide ul li{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+ 
+   
+}
+.what-we-will-provide ul li span svg{
+
+    color: #F34A31;
+    font-size: 18px;
+    
+
+
+}
+
+.job-responsibility ul{
+    margin-top: 2%;
+     
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+      font-size: 14px;
+    line-height: 1.5rem;
+    letter-spacing: .4px;
+    color: #515355;
+}
+.job-responsibility ul li{
+      display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.job-responsibility ul li span svg{
+
+    color: #F34A31;
+    font-size: 18px;
+    
+
+
+}
+
+.cut{
+    text-decoration: line-through;
+}
+
+.course-price{  
+    display: flex;    
+    width: 60%;
+    justify-content: space-between;
+}
+.course-price p{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #162645;
+}
+.course-price p span svg{
+    color: #F34A31;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------- course details ends------------------------------------------------------------------------------------------*/
 
 /* ---------------------------------------------------------------------------------------Why choose us section -------------------------------------------------------------------------------------- */
 
@@ -647,14 +936,15 @@ html, body {
 }
 
 .instructor-images img {
-    width: 100%;
+    width: 80%;
+    border-radius: 10px;
 }
 
 
 .social-media-of-teachers {
     position: absolute;
     top: 15px;
-    right: 15px;
+    left: 10px;
 }
 
 .social-media-of-teachers ul {
@@ -682,7 +972,7 @@ html, body {
 }
 
 .teacher-name-and-occ {
-
+    width: 80%;
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -701,7 +991,7 @@ html, body {
 /*  -----------------------------------------------------------------------------------------Meet our team css ends---------------------------------------------------------------------------------------- */
 
 
-/*------------------------------------------------------------------------------------------- contsct us section css start ----------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------- contact  us section css start ----------------------------------------------------------------------------------*/
 .form-contact-us {
     display: flex;
     flex-direction: column;
@@ -719,12 +1009,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     padding: 5%;
-   
-
-
-
 }
-
 
 .right-side-contact-us {
     border: 1px solid black;
@@ -735,7 +1020,6 @@ html, body {
 }
 
 .contact-us-main-content {
-
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -747,10 +1031,7 @@ html, body {
     gap: 10px;
 }
 
-
-
 .two-input-feilds {
-
     display: flex;
     justify-content: space-between;
 }
@@ -772,6 +1053,7 @@ input {
     padding: 15px;
     border-radius: 5px;
     border: none;
+    background-color: white;
 }
 
 .single-input-feild {
@@ -793,6 +1075,7 @@ input[type="number"] {
 
 .single-input-feild textarea {
     border-radius: 10px;
+    background-color: white;
 }
 
 .single-input-feild textarea::placeholder {
@@ -814,7 +1097,7 @@ input[type="number"] {
 
 .submit-contact-us {
     padding: 10px;
-    width: 30%;
+    width: 40%;
     font-size: 14px;
     font-weight: 600;
     background-color: #F34A31;
@@ -890,8 +1173,7 @@ input[type="number"] {
 
 .footer-image img {
     position: absolute;
-    height: 60px;
-    width: 60px;
+    width: 100px;
     left: 50%;
     top: 5px;
     border: 5px solid #F34A31;
@@ -1025,7 +1307,7 @@ input[type="number"] {
     color: #F34A31;
 }
 
-.ham{
+.ham {
     display: none;
 }
 
@@ -1033,21 +1315,23 @@ input[type="number"] {
 
 
 /* ------------------------------------------------------------------------------------ Student Review section start -------------------------------------------------------------------------------- */
-.center{
+.center {
     text-align: center;
 }
-.testmonial{
+
+.testmonial {
     background-color: white;
 }
-.student-review-main-div{
-   
+
+.student-review-main-div {
+
     display: flex;
     gap: 10px;
     margin-top: 5%;
-   
+
 }
 
-.main-student-div{
+.main-student-div {
     padding: 10px;
     border: 1px solid #081021;
     border-radius: 10px;
@@ -1057,9 +1341,10 @@ input[type="number"] {
     align-items: center;
     gap: 10px;
 }
+
 .student-image {
     border: 3px solid #F34A31;
-    border-radius: 100%;    
+    border-radius: 100%;
     width: 30%;
     padding: 5px;
 }
@@ -1067,7 +1352,7 @@ input[type="number"] {
 .student-image img {
     width: 100%;
     border-radius: 100%;
-    
+
 }
 
 .student-message {
@@ -1082,7 +1367,7 @@ input[type="number"] {
     color: #152038;
 }
 
-.student-name-and-position{
+.student-name-and-position {
 
     display: flex;
     flex-direction: column;
@@ -1090,28 +1375,29 @@ input[type="number"] {
     gap: 5px;
 }
 
-.student-name{
+.student-name {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: .4px;
     color: #152038;
 }
 
-.student-position{
-       font-size: 18px;
+.student-position {
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: .4px;
     color: #152038;
 }
+
 /* ------------------------------------------------------------------------------------ Student Review ends ------------------------------------------------------------------------------------------ */
 
 /*-----------------------------------------------------------------------------------------Responsive css start ------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
 
-  
 
-    .logo{
+
+    .logo {
         width: 10%;
     }
 
@@ -1128,43 +1414,43 @@ input[type="number"] {
         font-size: 13px;
     }
 
-    
 
-    .signup-button{
+
+    .signup-button {
         display: none;
 
     }
 
-    .login-button{
+    .login-button {
         display: none;
     }
 
-    .ham{
+    .ham {
         display: block;
     }
 
-    .hamburger{
+    .hamburger {
         display: flex;
-        font-size: 2rem;        
+        font-size: 2rem;
         align-items: center;
         justify-items: center;
-        
+
     }
 
-    .main-side-bar{
+    .main-side-bar {
         display: block;
     }
 
-    .hamburger button{
+    .hamburger button {
         background-color: white;
         border: none;
     }
 
-      .hamburger button svg{
+    .hamburger button svg {
         display: flex;
         font-size: 2.6rem;
         color: #F34A31;
-      }
+    }
 
     .company-discripction-heading {
         font-size: 2.5rem;
@@ -1177,7 +1463,7 @@ input[type="number"] {
     }
 
     .main-poster-buttons {
-        width: 45%;
+        width: 55%;
         font-size: 14px;
     }
 
@@ -1372,11 +1658,11 @@ input[type="number"] {
         justify-items: center;
     }
 
-    .social-media-of-teachers ul{
+    .social-media-of-teachers ul {
         gap: 5px;
     }
 
-    .submit-contact-us{
+    .submit-contact-us {
         width: 50%;
     }
 

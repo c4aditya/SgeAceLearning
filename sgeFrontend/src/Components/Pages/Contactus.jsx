@@ -3,6 +3,7 @@ import { MdOutlineMessage } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
 import { VscCallOutgoing } from "react-icons/vsc";
 import { SiMinutemailer } from "react-icons/si";
+
 function ContactUs() {
     const leftVariants = {
         hidden: { opacity: 0, x: -100 },
@@ -15,9 +16,46 @@ function ContactUs() {
     };
     return (
         <>
-    
+
+          <section>
+
+                <div className="top-poster-section-contact-us">
+
+                    
+                     <motion.div
+                        variants={leftVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="main-content-poster-page"
+                    >
+                    
+                    
+                        <div className="company-name">
+                            <p>Contact Us </p>
+                        </div>
+
+                        <div className="per-page-poster-content">
+                            <p>Get In Touch  </p>
+                        </div>
+
+                        <div className="per-poster-para">
+
+                            <p>we are here to help you </p>
+                        </div>
+                    </motion.div>
+
+
+
+                </div>
+
+            </section>
+
+       
             <section>
+               
                 <div className="contact-ua-top-section">
+
                     <motion.div
                         className="left-side-about-us contact-us-main-content"
                         initial="hidden"
@@ -57,7 +95,7 @@ function ContactUs() {
                         variants={rightVariants}
                      >
                         <div className="form-contact-us">
-                            <div className="about-us-sub-heading ">
+                            <div className="about-us-sub-heading">
                                 <p>CONTACT US </p>
                             </div>
                             <div className="heading-content">
@@ -116,6 +154,12 @@ function ContactUs() {
 
                     </motion.div>
 
+                </div>
+            </section>
+
+            <section>
+                <div className="location-via-map">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.1918417217416!2d78.65017067418695!3d27.80386522123026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974e021afbadad3%3A0x6b327f3cd9402150!2sSahawar%20Gate%20Market%20Rd%2C%20Uttar%20Pradesh%20207123!5e0!3m2!1sen!2sin!4v1755336924320!5m2!1sen!2sin"   loading="lazy" />
                 </div>
             </section>
         </>

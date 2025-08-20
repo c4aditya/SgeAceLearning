@@ -1,14 +1,14 @@
-import { useRef } from "react";
-import NavBar from "./Navbar";
 import CourseSection from "./Courses/Course";
 import ContactUs from "./Contactus";
-import Footer from "./Footer";
 import { motion } from "framer-motion";
 import FramerMotion from "./FramerMotion";
+import { useNavigate } from "react-router-dom";
 
 const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
 
 function Hero() {
+
+  const navigate = useNavigate();
 
 
   return (
@@ -45,6 +45,7 @@ function Hero() {
             </motion.div>
 
             {/* Animate buttons from bottom */}
+            
             <motion.div
               variants={bottomVariants}
               initial="hidden"
@@ -53,7 +54,7 @@ function Hero() {
               className="main-poster-buttons">
 
               <button className="enroll-now">  See Courses  </button>
-              <button className="enquiry-now" > Enquiry Now </button>
+              <button className="enquiry-now" onClick={()=> navigate("/contactUs")} > Enquiry Now </button>
 
             </motion.div>
           </div>
@@ -93,7 +94,7 @@ function Hero() {
                 </div>
 
                 <div className="button">
-                  <button className="button-know-more">Know More</button>
+                  <button className="button-know-more" onClick={()=>navigate("/aboutus") }>Know More</button>
                 </div>
               </motion.div>
 
@@ -107,17 +108,12 @@ function Hero() {
               >
                 <div className="image-of-persion">
                   <img
-                    src="https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/1.jpg"
+                    src="https://acelearningtraining.com/wp-content/uploads/2024/03/9963629-removebg-preview.png" 
                     alt="Person 1"
                   />
                 </div>
 
-                <div className="image-of-persion">
-                  <img
-                    src="https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/1.jpg"
-                    alt="Person 2"
-                  />
-                </div>
+                
               </motion.div>
             </div>
           </div>
@@ -135,7 +131,7 @@ function Hero() {
             viewport={{ once: true, amount: 0.3 }}
             className="main-img-posters-adv"
           >
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754915677/Blue_and_Yellow_Modern_Online_Learning_Courses_LinkedIn_Post_1_iznsqf.png" alt="Poster_1" />
+            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1755680851/3_dedag2.png" alt="Poster_1" />
           </motion.div>
 
           <motion.div
@@ -153,7 +149,7 @@ function Hero() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="main-img-posters-adv">
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754915677/Blue_and_Yellow_Modern_Online_Learning_Courses_LinkedIn_Post_1_iznsqf.png" alt="Poster 3" />
+            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1755680847/1_npojur.png" alt="Poster 3" />
           </motion.div>
         </div>
       </section>

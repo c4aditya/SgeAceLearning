@@ -2,21 +2,29 @@ import NavBar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
-import AboutUs from "./Components/Pages/AboutUs"
+import AboutUs from "./Components/Pages/AboutUs";
+import ContactUs from "./Components/Pages/Contactus";
 import './Components/Components.css'
+import CourseDetails from "./Components/Courses/CourseDetails";
+import { useRef } from "react";
 
 function App() {
-
+const footerRef = useRef(null)
 
   return (
   <>
   <Router>
-    <NavBar/>
+    <NavBar
+    footer={footerRef}
+
+    />
     <Routes>
       <Route path="/" element={<Hero/>}/>
       <Route path="/aboutus" element={<AboutUs/>} />
+      <Route path="/contactUs" element= {<ContactUs/>} />
+      <Route path="/courseDeatils" element={<CourseDetails/>} />
     </Routes>
-      <Footer/>
+      <Footer ref = {footerRef}/>
   </Router>
   
   </>

@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { MdOutlineSignalWifiStatusbarConnectedNoInternet4 } from "react-icons/md";
+import { motion } from "framer-motion";
+import FramerMotion from "./FramerMotion.js";
+const {  bottomVariants } = FramerMotion;
 
 function StudentReview() {
     const StudentData = [
@@ -52,7 +53,14 @@ function StudentReview() {
                 </div>
               
 
-                <div className="student-review-main-div">
+                   <motion.div
+                        variants={bottomVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                         className="student-review-main-div"
+                    >
+            
 
                     {
                         StudentData.map(data  =>(
@@ -80,7 +88,7 @@ function StudentReview() {
                     }
 
 
-                </div>
+                </motion.div>
 
                </div>
             </section>
