@@ -94,7 +94,7 @@ function CourseDetails() {
                             </ul>
 
                         </div>
-                        <hr></hr>
+                        
 
 
 
@@ -125,12 +125,14 @@ function CourseDetails() {
                                 <p className="cut"> <span><FaIndianRupeeSign /></span>{data.oldPrice} /- </p>
                                  <p> <span><FaIndianRupeeSign /></span>{data.price} /- </p>
                             </div>
+
+                             <div className="enroll-btn">
+                            <button>Enroll Now </button>
+                        </div>
                            
                         </div>
 
-                        <div className="enroll-btn">
-                            <button>Enroll Now </button>
-                        </div>
+                       
 
                     </div>
 

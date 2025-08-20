@@ -254,14 +254,14 @@ button:hover {
     height: 100vh;
     backdrop-filter: blur(2px);
     z-index: 10;
- 
+
 
 }
 
 
 .counclerForm {
-    background-color:white;
-    
+    background-color: white;
+
     border-radius: 5px;
     position: absolute;
     z-index: 10;
@@ -278,7 +278,7 @@ button:hover {
 
 }
 
-.councler-form-content{
+.councler-form-content {
     border: 1px solid black;
     width: 50%;
     background-color: #081021;
@@ -286,29 +286,30 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
 }
-.head{
+
+.head {
     font-size: 20px;
     width: 80%;
     margin: auto;
     font-weight: 600;
 }
 
-.councler-form-content ul li{ 
+.councler-form-content ul li {
     display: flex;
     gap: 5px;
     padding: 10px;
 }
 
-.councler-form-content ul li span{
+.councler-form-content ul li span {
     margin-top: 1%;
-    
+
 }
 
-.councler-form-content ul li span svg{
+.councler-form-content ul li span svg {
     fill: #F34A31;
 }
 
-.conculer-submit{
+.conculer-submit {
     margin-top: 5%;
     padding: 10px;
     font-size: 13px;
@@ -317,15 +318,16 @@ button:hover {
     border-radius: 5px;
     color: white;
 }
-.main-councler-from{  
-    display: flex;   
+
+.main-councler-from {
+    display: flex;
     flex-direction: column;
-   
+
     width: 60%;
     padding: 10px;
 }
 
-.cross{    
+.cross {
     width: 5%;
     display: flex;
     align-items: center;
@@ -333,30 +335,31 @@ button:hover {
     height: 5%;
     color: white;
     font-weight: 600;
-    font-size: 18px;   
+    font-size: 18px;
     border-radius: 100%;
     background-color: #F34A31;
     padding: 5px;
 }
 
-.from-councler-form form{ 
+.from-councler-form form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.from-councler-form form label{
+.from-councler-form form label {
     color: #F34A31;
-    font-size: 16px;   
+    font-size: 16px;
 }
 
-.from-councler-form form input{
+.from-councler-form form input {
     padding: 5px;
     width: 100%;
-    margin-top: 1%;  
-    border: 1px solid #152038;  
+    margin-top: 1%;
+    border: 1px solid #152038;
 }
-.h{
+
+.h {
     font-size: 2rem;
     font-weight: 600;
     color: #162645;
@@ -644,9 +647,9 @@ button:hover {
     display: flex;
     gap: 5px;
     color: #162645;
-    font-weight: 600;    
+    font-weight: 600;
     align-items: center;
-      font-size: 15px;
+    font-size: 15px;
 }
 
 .course-rating p span svg {
@@ -715,7 +718,7 @@ button:hover {
 
 /*---------------------------------------------------------------------------------------- course details section css start --------------------------------------------------------------------------- */
 
-.course-name-course-details p{
+.course-name-course-details p {
 
     font-size: 1.5rem;
     font-weight: 600;
@@ -728,49 +731,51 @@ button:hover {
     gap: 15px;
 }
 
-.course-details-info ul li{
-    display: flex;    
+.course-details-info ul li {
+    display: flex;
     align-items: center;
     gap: 5px;
     font-size: 15px;
 
-    
+
 }
 
 
 .course-details-info ul li span svg {
-    display: flex;    
-    font-size: 15px;   
+    display: flex;
+    font-size: 15px;
     fill: #F34A31;
-    
+
 }
 
-.course-details-section{
-    display: flex;  
-        padding: 5%;
+.course-details-section {
+    display: flex;
+    padding: 5%;
     justify-content: space-between;
 }
 
-.about-job{
+.about-job {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    
 }
-.course-details{
+
+.course-details {
     font-size: 14px;
     line-height: 1.5rem;
     letter-spacing: .4px;
     color: #515355;
 }
 
-.about-job-p{
+.about-job-p {
     font-size: 1.4rem;
     font-weight: 600;
     color: #081021;
     color: #F34A31;
 }
-.course-deatils-contents{
-    
+
+.course-deatils-contents {
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -781,91 +786,126 @@ button:hover {
     width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.course-thumbnail img{
-    width:100%;
-}
-
-.what-we-will-provide ul{
-     margin-top: 2%;
-
-    display: flex;
-    flex-direction: column;
     gap: 10px;
-      font-size: 14px;
-    line-height: 1.5rem;
-    letter-spacing: .4px;
-    color: #515355;
-
+    border: 1px solid #162645;
+    border-radius: 20px;
+    padding: 10px;
 }
 
-.what-we-will-provide ul li{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 5px;
- 
-   
-}
-.what-we-will-provide ul li span svg{
-
-    color: #F34A31;
-    font-size: 18px;
-    
-
-
+.course-thumbnail img {
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
 }
 
-.job-responsibility ul{
+.what-we-will-provide ul {
     margin-top: 2%;
-     
+
     display: flex;
     flex-direction: column;
     gap: 10px;
-      font-size: 14px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    letter-spacing: .4px;
+    color: #515355;
+
+}
+
+.what-we-will-provide ul li {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+
+
+}
+
+.what-we-will-provide ul li span svg {
+    color: #F34A31;
+    font-size: 18px;
+}
+
+.job-responsibility ul {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
     line-height: 1.5rem;
     letter-spacing: .4px;
     color: #515355;
 }
-.job-responsibility ul li{
-      display: flex;
+
+.job-responsibility ul li {
+    display: flex;
     justify-items: center;
     align-items: center;
     gap: 5px;
 
 }
 
-.job-responsibility ul li span svg{
+.job-responsibility ul li span svg {
 
     color: #F34A31;
     font-size: 18px;
-    
+
 
 
 }
 
-.cut{
+.cut {
     text-decoration: line-through;
 }
 
-.course-price{  
-    display: flex;    
-    width: 60%;
-    justify-content: space-between;
-}
-.course-price p{
+.course-price {
     display: flex;
+
+ 
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #162645;
-}
-.course-price p span svg{
-    color: #F34A31;
+    justify-content: center;
+    gap: 30px;
+    
 }
 
+.course-price p {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:white;
+    text-align: center;
+}
+
+.course-price p span svg {
+    color: #F34A31;
+}
+.with-price{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background-color: #081021;
+    
+}
+
+.enroll-btn{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enroll-btn button{
+  padding: 10px;
+    width: 60%;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #F34A31;
+    color: white;
+    border-radius: 10px;
+}
 
 
 
@@ -873,6 +913,7 @@ button:hover {
 /*---------------------------------------------------------------------------------------- course details ends------------------------------------------------------------------------------------------*/
 
 /* ---------------------------------------------------------------------------------------Why choose us section -------------------------------------------------------------------------------------- */
+
 
 
 
@@ -1392,7 +1433,13 @@ input[type="number"] {
 /* ------------------------------------------------------------------------------------ Student Review ends ------------------------------------------------------------------------------------------ */
 
 /*-----------------------------------------------------------------------------------------Responsive css start ------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1100px){
 
+   .course-thumbnail{
+    border: none;
+   }
+
+}
 @media only screen and (max-width: 800px) {
 
 
@@ -1566,6 +1613,29 @@ input[type="number"] {
         text-align: center;
         gap: 10px;
     }
+
+    /*-------------------------------------------------------------------- course details sectio responsive start--------------------------------------------------------------------------------------  */
+
+    .course-details-section{
+        flex-direction: column;
+    }
+
+    .course-thumbnail{
+        
+        width: 100%;
+
+    }
+    .course-thumbnail img {
+        height: 100%;
+    }
+
+    .course-deatils-contents {
+        width: 100%;
+        
+    }
+
+    /* -------------------------------------------------------------------- course details section ends -------------------------------------------------------------------------------------------------- */
+
 }
 
 
@@ -1685,6 +1755,41 @@ input[type="number"] {
     .course_data {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .about-job-p{
+        font-size: 15px;
+    }
+
+    .course-name-course-details p{
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .what-we-will-provide ul {
+        font-size: 11px;
+        gap: 5px;
+    }
+    .course-details{
+        font-size: 11px;
+        line-height: 1.2rem;
+    }
+
+    .job-responsibility ul{
+        font-size: 11px;
+        gap: 5px;
+
+    }
+    .with-price{
+        gap: 10px;
+    }
+
+    .course-price p{
+        font-size: 1rem;
+    }
+
+    .enroll-btn button{
+        padding: 5px;
+    }
+
 
 }
 
