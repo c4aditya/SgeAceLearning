@@ -14,11 +14,13 @@ import { CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
 import FramerMotion from "../FramerMotion";
 import { useNavigate } from "react-router-dom";
-import StudentReview from "../StudentReview";
+import { IoStar } from "react-icons/io5";
+import { IoLanguageOutline } from "react-icons/io5";
+import { RiTimeFill } from "react-icons/ri";
 function CourseSection({ contactUs }) {
     // const [courseData , setCourseData] = useState(Course)
     const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
-     const nevigate = useNavigate();
+    const nevigate = useNavigate();
     return (
         <>
             <div className="wrapper">
@@ -74,24 +76,7 @@ function CourseSection({ contactUs }) {
 
                 </div>
 
-                <motion.div
-                    variants={leftVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="Course-heading">
-
-                    <div className="about-us-sub-heading">
-                        <p>OUR COURSES</p>
-                    </div>
-
-                    <div className="content-our-course">
-                        <p>What would you like to <span className="color">  learn?</span></p>
-                    </div>
-
-                    {/* <p className="course-para">Best Course we provide To you for make your dream job true </p> */}
-                </motion.div>
-
+              
                 <div className="course_data">
                     {
                         Course.map((data) => (
@@ -108,7 +93,7 @@ function CourseSection({ contactUs }) {
 
                                 <hr className="card-hr"></hr>
 
-                               
+
 
                                 <div className="course-name">
 
@@ -118,11 +103,17 @@ function CourseSection({ contactUs }) {
 
 
                                 <div className="course-rating">
-                                 
-                                    
-                                    <p><span><IoIosStar /></span>{data.rating}</p>
-                                       <p><span><FaIndianRupeeSign /></span>{data.price} /- </p>
-                
+
+
+                                    <div className="course-details-info border-in-course">
+
+                                        <ul>
+                                            <li><span><IoStar /></span>{data.rating}</li>
+                                            <li><span>< IoLanguageOutline /></span>{data.language}</li>
+                                            <li><span><RiTimeFill /></span>{data.hours}</li>
+                                        </ul>
+                                    </div>
+
                                 </div>
 
 
@@ -132,7 +123,7 @@ function CourseSection({ contactUs }) {
 
                                 <div className="course-cards-buttons">
 
-                                    <button onClick={() => nevigate("/courseDeatils" , {state : data})}>Course Details </button>
+                                    <button onClick={() => nevigate("/courseDeatils", { state: data })}>Course Details </button>
                                     <button onClick={() => contactUs.current.scrollIntoView({ behaviour: "smooth" })}>Enquiry Now</button>
 
                                 </div>
@@ -140,11 +131,6 @@ function CourseSection({ contactUs }) {
                             </motion.div>
                         ))}
                 </div>
-
-
-
-
-
             </div>
 
             <div className="why-choose-us-section-main">
@@ -237,7 +223,7 @@ function CourseSection({ contactUs }) {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
-                             className="instructor-images">
+                            className="instructor-images">
                             <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237306/smiling-female-student-doing-homework-desk-1414x1536_my0vpk.jpg">
 
                             </img>
@@ -261,12 +247,12 @@ function CourseSection({ contactUs }) {
                             </div>
                         </motion.div>
 
-                           <motion.div
+                        <motion.div
                             variants={bottomVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
-                             className="instructor-images">
+                            className="instructor-images">
                             <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237288/successful-businessman-1414x1536_mjuwfg.jpg">
                             </img>
 
@@ -287,12 +273,12 @@ function CourseSection({ contactUs }) {
                             </div>
                         </motion.div>
 
-                           <motion.div
+                        <motion.div
                             variants={bottomVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
-                             className="instructor-images">
+                            className="instructor-images">
                             <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237280/confident-businessman-1414x1536_yvf2g5.jpg">
                             </img>
 
@@ -320,7 +306,7 @@ function CourseSection({ contactUs }) {
                 </div>
             </div>
 
-         
+
         </>
     )
 }

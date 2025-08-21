@@ -659,6 +659,7 @@ button:hover {
 }
 
 .course_data {
+    margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -677,11 +678,31 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border: 1px solid #162645;
+    border: 1px solid gray;
     border-radius: 5px;
     padding: 10px;
     background-color: white;
 
+}
+
+
+.border-in-course{
+    width: 100%;
+    
+}
+
+
+
+.border-in-course ul li{
+    border: 1px solid black;
+    padding: 2px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px !important;
+    
 }
 
 .course-cards-buttons {
@@ -691,13 +712,14 @@ button:hover {
 
 .course-cards-buttons button {
 
-    padding: 7px;
-    font-size: 14px;
+    padding: 5px;
+    font-size: 12px;
     font-weight: 600;
     border: none;
     background-color: #F34A31;
     color: white;
     border-radius: 5px;
+    width: 45%;
 
 }
 
