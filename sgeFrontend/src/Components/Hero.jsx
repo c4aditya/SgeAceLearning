@@ -3,6 +3,7 @@ import ContactUs from "./Contactus";
 import { motion } from "framer-motion";
 import FramerMotion from "./FramerMotion";
 import { useNavigate } from "react-router-dom";
+import StudentReview from "./StudentReview";
 
 const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
 
@@ -161,10 +162,15 @@ function Hero() {
         </div>
       </section>
 
-      {/* Contact Us section */}
+      {/* Contact Us section
       <div >
         <ContactUs />
-      </div>
+      </div> */}
+
+      <section>
+        {/* student review section */}
+        <StudentReview/>
+      </section>
 
     
     </>

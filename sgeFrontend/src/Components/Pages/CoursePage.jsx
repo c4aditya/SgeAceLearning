@@ -9,6 +9,7 @@ import { RiTimeFill } from "react-icons/ri";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
 import { useNavigate } from "react-router-dom";
+import StudentReview from "../StudentReview.jsx";
 function OurCourses() {
     const [courseData, setCourseData] = useState(Course);
     const navigate =useNavigate();
@@ -156,6 +157,8 @@ function OurCourses() {
 
 
             </section>
+
+            <StudentReview/>
 
         </>
     )

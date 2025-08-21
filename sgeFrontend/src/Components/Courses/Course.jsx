@@ -14,6 +14,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
 import FramerMotion from "../FramerMotion";
 import { useNavigate } from "react-router-dom";
+import StudentReview from "../StudentReview";
 function CourseSection({ contactUs }) {
     // const [courseData , setCourseData] = useState(Course)
     const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
@@ -318,6 +319,8 @@ function CourseSection({ contactUs }) {
 
                 </div>
             </div>
+
+         
         </>
     )
 }
