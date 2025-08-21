@@ -1,8 +1,9 @@
 const Course = [
   {
-    id: 1,
+    id: 1,    
     image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754145151/wmremove-transformed_5_uowqp5.jpg",
     name: "PERSONALITY REENGINEERING PROGRAM",
+    type:"Regenering",
     price: "27,500",
     oldPrice:"30,000",
     courseDetails: "The Personality Reengineering Program helps enhance personality for growth. It focuses on self-discovery, confidence, and leadership skills. Participants learn practical ways to achieve their goals. This program also covers emotional intelligence, effective communication, and stress management to build a strong personal and professional presence.",
@@ -35,6 +36,7 @@ const Course = [
     id: 2,
     image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754145119/DeWatermark.ai_1754145107307_fmhaqw.jpg",
     name: "CERTIFICATION IN HOTEL MANAGEMENT",
+    type:"Hotel",
     price: "29,000",
      oldPrice:"30,000",
     courseDetails: "This short course covers core hospitality operations like front office, housekeeping, food & beverage, and management. It prepares students for roles in hotels and resorts. Additionally, students develop skills in guest relations, event coordination, and hotel marketing strategies to excel in the hospitality industry.",
@@ -68,6 +70,7 @@ const Course = [
     image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754145119/DeWatermark.ai_1754145107307_fmhaqw.jpg",
     name: "CERTIFICATION IN AIRPORT MANAGEMENT",
     price: "27,000",
+     type:"Aviation",
      oldPrice:"30,000",
     courseDetails: "A course for airport operations, passenger services, and security. Completing it helps secure jobs in aviation for those aiming to enter the airport sector. The curriculum also includes regulatory compliance, baggage handling, and emergency procedures to prepare students for diverse airport roles.",
     rating: "4.8",
@@ -103,6 +106,7 @@ const Course = [
      oldPrice:"30,000",
     courseDetails: "Specialized aviation course covering operations, safety, and customer service. It prepares students for aviation jobs like ground staff and cabin crew. The program also focuses on communication skills, crisis management, and regulatory standards to ensure readiness for a professional aviation career.",
     rating: "5",
+     type:"Aviation",
     language: "Hindi",
     hours: "60 hr+",
     whatYouWillGet: {
@@ -136,6 +140,7 @@ const Course = [
     courseDetails: "Trains in airline hospitality, inflight service, and safety. Boosts job chances as cabin crew, ideal for aspiring air hostesses. The course further trains students in grooming standards, passenger handling, and emergency response to excel in inflight service.",
     rating: "5",
     language: "Hindi",
+    type:"Aviation",
     hours: "45 hr+",
     whatYouWillGet: {
       one: " Recognized credential to enhance cabin crew prospects.",
@@ -163,6 +168,109 @@ const Course = [
     id: 6,
     image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
     name: "CERTIFICATION IN CRUISE SHIP",
+    type:"Ship",
+    price: "36,500",
+     oldPrice:"30,000",
+    courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service. This course also covers event management, safety drills, and cultural sensitivity to prepare students for diverse roles on the cruise line.",
+    rating: "4",
+
+    language: "Hindi",
+    hours: "58 hr+",
+    whatYouWillGet: {
+      one: " Official recognition in cruise hospitality.",
+      two: "Continuous assistance throughout coursework.",
+      three: " Regular knowledge assessments.",
+      four: " Practical skills for cruise ship roles.",
+      five: "In-depth modules on cruise operations and safety."
+    },
+    jobResponsibilities: {
+      one: "Manage guest relations and onboard services.",
+      two: "Ensure safety protocols are followed on deck.",
+      three: "Assist in planning and executing cruise events.",
+      four: "Provide excellent customer service to diverse guests.",
+      five: "Coordinate with ship management and crew members."
+    },
+      courseInclude:{
+      one:"No Pre-requisite Required",
+      two:"50+ hours On-Demand Video",
+      three:"Live Interview Preparation & mentorship sessions",
+      four:"Revision && Doubts Class",
+      five:"with Doubt Assistance",
+    }
+  },
+   {
+    id: 7,
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
+    name: "CERTIFICATION IN CRUISE SHIP",
+    type:"hr",
+    price: "36,500",
+    
+     oldPrice:"30,000",
+    courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service. This course also covers event management, safety drills, and cultural sensitivity to prepare students for diverse roles on the cruise line.",
+    rating: "4",
+    language: "Hindi",
+    hours: "58 hr+",
+    whatYouWillGet: {
+      one: " Official recognition in cruise hospitality.",
+      two: "Continuous assistance throughout coursework.",
+      three: " Regular knowledge assessments.",
+      four: " Practical skills for cruise ship roles.",
+      five: "In-depth modules on cruise operations and safety."
+    },
+    jobResponsibilities: {
+      one: "Manage guest relations and onboard services.",
+      two: "Ensure safety protocols are followed on deck.",
+      three: "Assist in planning and executing cruise events.",
+      four: "Provide excellent customer service to diverse guests.",
+      five: "Coordinate with ship management and crew members."
+    },
+      courseInclude:{
+      one:"No Pre-requisite Required",
+      two:"50+ hours On-Demand Video",
+      three:"Live Interview Preparation & mentorship sessions",
+      four:"Revision && Doubts Class",
+      five:"with Doubt Assistance",
+    }
+  },
+   {
+    id: 8,
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
+    name: "CERTIFICATION IN CRUISE SHIP",
+     type:"hr",
+    price: "36,500",
+     oldPrice:"30,000",
+    courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service. This course also covers event management, safety drills, and cultural sensitivity to prepare students for diverse roles on the cruise line.",
+    rating: "4",
+    language: "Hindi",
+     type:"hr",
+    hours: "58 hr+",
+    whatYouWillGet: {
+      one: " Official recognition in cruise hospitality.",
+      two: "Continuous assistance throughout coursework.",
+      three: " Regular knowledge assessments.",
+      four: " Practical skills for cruise ship roles.",
+      five: "In-depth modules on cruise operations and safety."
+    },
+    jobResponsibilities: {
+      one: "Manage guest relations and onboard services.",
+      two: "Ensure safety protocols are followed on deck.",
+      three: "Assist in planning and executing cruise events.",
+      four: "Provide excellent customer service to diverse guests.",
+      five: "Coordinate with ship management and crew members."
+    },
+      courseInclude:{
+      one:"No Pre-requisite Required",
+      two:"50+ hours On-Demand Video",
+      three:"Live Interview Preparation & mentorship sessions",
+      four:"Revision && Doubts Class",
+      five:"with Doubt Assistance",
+    }
+  },
+   {
+    id: 9,
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
+    name: "CERTIFICATION IN CRUISE SHIP",
+     type:"hr",
     price: "36,500",
      oldPrice:"30,000",
     courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service. This course also covers event management, safety drills, and cultural sensitivity to prepare students for diverse roles on the cruise line.",

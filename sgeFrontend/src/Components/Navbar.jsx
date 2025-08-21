@@ -124,7 +124,7 @@ function NavBar() {
                                 <ul>
                                     <li><button onClick={() => Nevigate("/")}> HOME </button></li>
                                     <li> <button onClick={() => Nevigate("/aboutus")}> ABOUT US </button> </li>
-                                    <li><button onClick={() => Nevigate("/aboutus")} >TRANING PROGRAM </button></li>
+                                    <li><button onClick={() => Nevigate("/ourCourses")} >TRANING PROGRAM </button></li>
                                     <li><button onClick={() => Nevigate("/contactUs")} >CONTACT US </button></li>
                                     <li><button onClick={() => footer.current.scrollIntoView({ behavior: "smooth" })} >MORE INFO </button></li>
 
@@ -181,36 +181,12 @@ function NavBar() {
 
                                     </div>
 
-                                    <hr className="line-side-bar"></hr>
-
-                                    <div className="side-bar-buttons ">
-
-                                        <div className="mob-login-button s">
-                                            <button>SignUp</button>
-                                        </div>
-
-                                        <div className="mob-login-button l">
-                                            <button>Login</button>
-                                        </div>
+                     
 
 
+                            
 
-                                    </div>
-
-
-                                    <hr className="line-side-bar"></hr>
-
-                                    <div className="social-media-list-side-bar">
-
-                                        <ul>
-                                            <li><PiFacebookLogo /></li>
-                                            <li><FaWhatsapp /></li>
-                                            <li><IoLogoInstagram /></li>
-                                            <li><CiLinkedin /></li>
-                                            <li><SlSocialTwitter /></li>
-                                        </ul>
-
-                                    </div>
+                              
                                 </div>
 
                             ) : (

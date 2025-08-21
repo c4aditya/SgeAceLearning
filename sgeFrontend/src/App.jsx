@@ -6,6 +6,7 @@ import AboutUs from "./Components/Pages/AboutUs";
 import ContactUs from "./Components/Pages/Contactus";
 import './Components/Components.css'
 import CourseDetails from "./Components/Courses/CourseDetails";
+import OurCourses from "./Components/Pages/CoursePage";
 import { useRef } from "react";
 
 function App() {
@@ -23,6 +24,7 @@ const footerRef = useRef(null)
       <Route path="/aboutus" element={<AboutUs/>} />
       <Route path="/contactUs" element= {<ContactUs/>} />
       <Route path="/courseDeatils" element={<CourseDetails/>} />
+      <Route path="/ourCourses" element={<OurCourses/>} />
     </Routes>
       <Footer ref = {footerRef}/>
   </Router>

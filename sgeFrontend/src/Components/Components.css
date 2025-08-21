@@ -757,7 +757,7 @@ button:hover {
 .about-job {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .course-details {
@@ -860,11 +860,11 @@ button:hover {
 .course-price {
     display: flex;
 
- 
+
     align-items: center;
     justify-content: center;
     gap: 30px;
-    
+
 }
 
 .course-price p {
@@ -872,14 +872,15 @@ button:hover {
     align-items: center;
     font-size: 1.3rem;
     font-weight: 600;
-    color:white;
+    color: white;
     text-align: center;
 }
 
 .course-price p span svg {
     color: #F34A31;
 }
-.with-price{
+
+.with-price {
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
@@ -887,18 +888,18 @@ button:hover {
     gap: 20px;
     padding: 10px;
     background-color: #081021;
-    
+
 }
 
-.enroll-btn{
-    
+.enroll-btn {
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.enroll-btn button{
-  padding: 10px;
+.enroll-btn button {
+    padding: 10px;
     width: 60%;
     font-size: 14px;
     font-weight: 600;
@@ -1433,13 +1434,14 @@ input[type="number"] {
 /* ------------------------------------------------------------------------------------ Student Review ends ------------------------------------------------------------------------------------------ */
 
 /*-----------------------------------------------------------------------------------------Responsive css start ------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1100px) {
 
-   .course-thumbnail{
-    border: none;
-   }
+    .course-thumbnail {
+        border: none;
+    }
 
 }
+
 @media only screen and (max-width: 800px) {
 
 
@@ -1616,22 +1618,23 @@ input[type="number"] {
 
     /*-------------------------------------------------------------------- course details sectio responsive start--------------------------------------------------------------------------------------  */
 
-    .course-details-section{
+    .course-details-section {
         flex-direction: column;
     }
 
-    .course-thumbnail{
-        
+    .course-thumbnail {
+
         width: 100%;
 
     }
+
     .course-thumbnail img {
         height: 100%;
     }
 
     .course-deatils-contents {
         width: 100%;
-        
+
     }
 
     /* -------------------------------------------------------------------- course details section ends -------------------------------------------------------------------------------------------------- */
@@ -1640,6 +1643,11 @@ input[type="number"] {
 
 
 @media only screen and (max-width: 600px) {
+
+        .hamburger button svg {
+            font-size: 1.7rem;
+            font-weight: 900;
+        }
 
     .top-nev {
         flex-direction: column;
@@ -1756,40 +1764,64 @@ input[type="number"] {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .about-job-p{
+    .about-job-p {
         font-size: 15px;
     }
 
-    .course-name-course-details p{
+    .course-name-course-details p {
         letter-spacing: 1px;
         font-size: 14px;
     }
+
     .what-we-will-provide ul {
-        font-size: 11px;
+        font-size: 14px;
         gap: 5px;
     }
-    .course-details{
-        font-size: 11px;
-        line-height: 1.2rem;
+
+    .course-details {
+        font-size: 14px;
+
     }
 
-    .job-responsibility ul{
-        font-size: 11px;
+    .job-responsibility ul {
+        font-size: 14px;
         gap: 5px;
 
     }
-    .with-price{
+
+    .with-price {
         gap: 10px;
     }
 
-    .course-price p{
+    .course-price p {
         font-size: 1rem;
     }
 
-    .enroll-btn button{
+    .enroll-btn button {
         padding: 5px;
     }
 
+
+    .what-we-will-provide ul li {
+        align-items: flex-start;
+    }
+
+    .what-we-will-provide ul li span svg {
+        margin-top: 4px;
+    }
+
+    .job-responsibility ul li {
+        align-items: flex-start;
+    }
+
+    .job-responsibility ul li span svg {
+        margin-top: 4px;
+    }
+
+    .footer-image img{
+        width: 60px;
+        padding: 5px;
+    }
 
 }
 
