@@ -8,8 +8,10 @@ import { IoLanguageOutline } from "react-icons/io5";
 import { RiTimeFill } from "react-icons/ri";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 const { leftVariants, rightVariants, bottomVariants } = FramerMotion;
+import { useNavigate } from "react-router-dom";
 function OurCourses() {
     const [courseData, setCourseData] = useState(Course);
+    const navigate =useNavigate();
     // console.log(Course)
     let CourseType;
     function handleFilter(event) {
@@ -114,11 +116,7 @@ function OurCourses() {
                                             <p>{data.courseDetails}</p>
                                         </div>
 
-                                     
-                                    </div>
-
-                                    <div className="course-page-buttons">
-                                           <div className="course-details-info">
+                                        <div className="course-details-info">
 
                                             <ul>
                                                 <li><span><IoStar /></span>{data.rating}</li>
@@ -127,13 +125,23 @@ function OurCourses() {
                                             </ul>
                                         </div>
 
-                                          <div className="course-price">
-                                                                        <p className="cut"> <span><FaIndianRupeeSign /></span>{data.oldPrice} /- </p>
-                                                                         <p> <span><FaIndianRupeeSign /></span>{data.price} /- </p>
-                                                                    </div>
-                                        
+
+                                    </div>
+
+                                    <div className="course-page-buttons">
+
+
+                                        <div className="course-price-course-page">
+                                            <p className="cut"> <span><FaIndianRupeeSign /></span>{data.oldPrice} /- </p>
+                                            <p> <span><FaIndianRupeeSign /></span>{data.price} /- </p>
+                                        </div>
+
                                         <div className="enq">
-                                            <button>Enquiry Now </button>
+                                            <button onClick={()=> navigate("/courseDeatils" , {state :data})}>Course Deatils</button>
+                                        </div>
+
+                                        <div className="enq">
+                                            <button>Enroll Now </button>
                                         </div>
 
                                     </div>
