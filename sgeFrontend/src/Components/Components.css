@@ -158,16 +158,16 @@ button:hover {
 }
 
 .main-side-bar {
-    display: none;    
-   
-    
+    display: none;
+
+
 }
 
 .side-nav-bar {
 
     position: absolute;
     width: 100%;
-    height:50vh;
+    height: 50vh;
     gap: 20px;
     background-color: #162645;
     color: white;
@@ -180,7 +180,7 @@ button:hover {
 
     display: flex;
     flex-direction: column;
-    
+
     height: 50vh;
     align-items: center;
     justify-content: center;
@@ -198,7 +198,7 @@ button:hover {
     justify-items: center;
     align-items: center;
     justify-content: center;
-    
+
     gap: 20px;
     padding: 2%;
     font-size: 18px;
@@ -700,14 +700,14 @@ button:hover {
 }
 
 
-.border-in-course{
+.border-in-course {
     width: 100%;
-    
+
 }
 
 
 
-.border-in-course ul li{
+.border-in-course ul li {
     border: 1px solid black;
     padding: 2px;
     width: 20%;
@@ -716,7 +716,7 @@ button:hover {
     justify-content: center;
     border-radius: 5px;
     font-size: 14px !important;
-    
+
 }
 
 .course-cards-buttons {
@@ -1329,7 +1329,7 @@ input[type="number"] {
 
 }
 
-.main-copy b svg{
+.main-copy b svg {
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -1364,7 +1364,7 @@ input[type="number"] {
     font-weight: 600;
 }
 
-.list-links-on-footer ul li:hover{
+.list-links-on-footer ul li:hover {
     cursor: pointer;
 }
 
@@ -1684,50 +1684,98 @@ input[type="number"] {
     /* -------------------------------------------------------------------- course details section ends -------------------------------------------------------------------------------------------------- */
 
     /*---------------------------------------------------------------------- About us css start -----------------------------------------------------------------------------------------------------------*/
-    
-.per-page-poster-content{
-    width: 90%;
-}
-.per-page-poster-content p {
-    font-size: 2rem;
-    line-height: 2rem;
-}
 
-.per-poster-para{
-    width: 90%;
+    .per-page-poster-content {
+        width: 90%;
+    }
+
+    .per-page-poster-content p {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .per-poster-para {
+        width: 90%;
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+
+    .our-future {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .main-class-future {
+        width: 100%;
+    }
+
+    .varify-by-name-and-subnames {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .student-review-main-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .main-student-div {
+        height: 100%;
+    }
+
+    .right-side-our-program img {
+        width: 100%;
+
+    }
+
+    .history-of-us {
+        margin-top: 2%;
+    }
+
+    /* course section starts  */
+
+    .button-categoryes{
+        width: 100%;
+    }
+
+    .c-h {
+        font-size: 1.4rem;
+    }
+
+   .course-page-course-name{
+    font-size: 1rem;
+   }
+
+   .sub-class-our-course{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+
+   .course-page-course-content{
+    width: 100%;
+    
+   }
+   .course-image img{
+    width: 94%;
+    height: 285px;
+    border-radius: 5px;
+   }
+
+   .course-page-buttons{
+    width: 100%;
+    padding: 2px;
+    gap: 5px;
+   }
+
+   .enq{
+    width: 100%;
     font-size: 14px;
-    letter-spacing: 0px;
-}
-
-.our-future{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-   
-}
-
-.main-class-future{
-    width: 100%;
-}
-
-.varify-by-name-and-subnames {
-    grid-template-columns: repeat(2,1fr);
-}
-.student-review-main-div{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-}
-.main-student-div{
-    height: 100%;
-}
-.right-side-our-program img {
-    width: 100%;
-   
-}
-
-.history-of-us{
-    margin-top: 2%;
-}
+    padding: 2px;
+   }
+   .course-price-course-page p{
+    font-size: 14px;
+   }
     /* ---------------------------------------------------------------------- About us css ends------------------------------------------------------------------------------------------------------------ */
 
 }
@@ -1736,10 +1784,10 @@ input[type="number"] {
 @media only screen and (max-width: 600px) {
 
 
-        .hamburger button svg {
-            font-size: 1.7rem;
-            font-weight: 900;
-        }
+    .hamburger button svg {
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
 
     .top-nev {
         flex-direction: column;
@@ -1910,7 +1958,7 @@ input[type="number"] {
         margin-top: 4px;
     }
 
-    .footer-image img{
+    .footer-image img {
         width: 60px;
         padding: 5px;
     }
@@ -1918,21 +1966,95 @@ input[type="number"] {
 
     /* about us css */
 
-    .our-future{
+    .our-future {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .varify-by-name-and-subnames{
-        grid-template-columns: repeat(1,1fr);
+    .varify-by-name-and-subnames {
+        grid-template-columns: repeat(1, 1fr);
     }
-        .student-review-main-div{
-            grid-template-columns: repeat(2,1fr);
+
+    .student-review-main-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .student-message {
+        height: 250px;
+    }
+
+    .provide ul span{
+        font-size: 1rem;
+    }
+
+    .history-and-social-meadia-links-footer {
+        margin-top: 6%;
+    }
+
+    .button-categoryes{
+        width: 100%;
+    }
+    
+
+    /* our course  */
+
+    .c-h{
+        font-size: 1rem;
+        line-height: 1.6rem;
+        letter-spacing: .6px;
+    }
+    .buttons-cat{
+        font-size: 14px;
+        font-weight: 500;
+        width: 16%;
+    }
+
+     .buttons-cat button{
+        padding: 0px;
+     }
+    .sub-class-our-course{
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }
+
+    .course-image{
+        width: 100%;
+    }
+
+    .course-page-course-content{
+        width: 100%;
+    }
+
+    .course-page-buttons{
+        width: 100%;
+        border: 2px solid black;        
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .sub-class-our-course{
+        padding: 5px;
+    }
+
+    .large-heading p{
+        font-size: 1.3rem;
+    }
+    
+    .course-image{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .course-image img {
+            height: 100%;
+            width: 100%;
         }
 
-        .student-message {
-            height: 250px;
+        .course-page-course-detials{
+            line-height: 1.3rem;
         }
 
+        
 }
 
 

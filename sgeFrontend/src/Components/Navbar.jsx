@@ -173,6 +173,7 @@ function NavBar() {
 
                                             <li onClick={() => { Nevigate("/") , closeSideBar() }}>Home</li>
                                             <li onClick={() => { Nevigate("/aboutus") , closeSideBar() }}>About us</li>
+                                            <li onClick={() => { Nevigate("/ourCourses") , closeSideBar() }}>Training Program</li>
                                             <li onClick={() => { Nevigate("/contactUs"), closeSideBar()}}>Contact us</li>
                                             <li onClick={() => { closeSideBar(); }}>More</li>
 

@@ -52,7 +52,7 @@ function OurCourses() {
                             <p>Our Courses </p>
                         </div>
 
-                        <div className="course-name-course-details">
+                        <div className="per-page-poster-content">
                             <p>Our Courses created for you</p>
                         </div>
 
