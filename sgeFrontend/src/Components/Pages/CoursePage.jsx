@@ -142,7 +142,7 @@ function OurCourses() {
                                         </div>
 
                                         <div className="enq">
-                                            <button>Enroll Now </button>
+                                            <button onClick={()=> navigate("/applicationForm")}>Enroll Now </button>
                                         </div>
 
                                     </div>

@@ -171,11 +171,10 @@ function NavBar() {
 
                                         <ul>
 
-                                            <li onClick={() => { closeSideBar(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Home</li>
-                                            <li onClick={() => Nevigate("/aboutus")}>About us</li>
-                                            <li onClick={() => Nevigate("/contactUs")}>Contact us</li>
-                                            <li onClick={() => { ourCourse.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>Courses</li>
-                                            <li onClick={() => { footer.current.scrollIntoView({ behavior: "smooth" }); closeSideBar(); }}>More</li>
+                                            <li onClick={() => { Nevigate("/") , closeSideBar() }}>Home</li>
+                                            <li onClick={() => { Nevigate("/aboutus") , closeSideBar() }}>About us</li>
+                                            <li onClick={() => { Nevigate("/contactUs"), closeSideBar()}}>Contact us</li>
+                                            <li onClick={() => { closeSideBar(); }}>More</li>
 
                                         </ul>
 

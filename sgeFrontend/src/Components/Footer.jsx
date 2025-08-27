@@ -4,7 +4,9 @@ import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { SlSocialTwitter } from "react-icons/sl";
 import { MdOutlineCopyright } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 function Footer() {
+    const Navigate = useNavigate()
     return (
         <>
             <section>
@@ -45,10 +47,10 @@ function Footer() {
 
                             <div className="list-links-on-footer">
                                 <ul>
-                                    <li>Home</li>
-                                    <li>About Us</li>
-                                    <li>Contact Us </li>
-                                    <li>Our Courses</li>
+                                    <li onClick={()=> Navigate("/")}>Home</li>
+                                    <li onClick={()=> Navigate("/aboutus")}>About Us</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Contact Us </li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Our Courses</li>
                                     <li>Testominals</li>
                                 </ul>
                             </div>
@@ -62,12 +64,12 @@ function Footer() {
 
                             <div className="list-links-on-footer">
                                 <ul>
-                                    <li>Presonal Reengniring Program</li>
-                                    <li>Hotel Managemnt</li>
-                                    <li>Airport Management </li>
-                                    <li>Aviation</li>
-                                    <li>Air Hostess</li>
-                                    <li>Curise Ship</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Presonal Reengniring Program</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Hotel Managemnt</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Airport Management </li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Aviation</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Air Hostess</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Curise Ship</li>
                                 </ul>
                             </div>
                         </div>
@@ -80,9 +82,9 @@ function Footer() {
 
                             <div className="list-links-on-footer">
                                 <ul>
-                                    <li>Help Center</li>
-                                    <li>Connect us</li>
-                                    <li>Student Feed Backs</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Help Center</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Connect us</li>
+                                    <li onClick={()=>Navigate("/aboutus")}>Student Feed Backs</li>
                                     
                                 </ul>
                             </div>
@@ -126,11 +128,11 @@ function Footer() {
 
                       <div className="copy-right-sections">
                         <div className="main-copy">
-                            <p>Copyright <span><MdOutlineCopyright/></span>2025 SGACE Learning Traning Institute | All rights reserved</p>
+                            <p>Copyright <b><MdOutlineCopyright/></b>2025 SGACE Learning Traning Institute | All rights reserved</p>
                         </div>
 
                         <div className="copy-links">
-                            <p>Trem of services | Privacy Policy  </p>
+                            <p onClick={()=> Navigate("/termAndCondition")}> Trem of services | Privacy Policy  </p>
                         </div>
                       </div>
                     </div>

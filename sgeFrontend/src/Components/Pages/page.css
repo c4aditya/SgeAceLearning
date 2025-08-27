@@ -316,6 +316,112 @@
 }
 
 
+/*------------------------------------------------------------------------------------------------application from page ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.addmission-form{
+    padding: 5%;
+}
+
+.heading-form{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.main-class-form{
+    border: 2px solid #081021;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #081021;
+}
+.wrapper-from{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form-for-three-input{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.input-form-for-three-input input{
+    padding: 10px !important;
+    color: #081021;
+    
+}
+.three-feilds{
+    display: flex;
+    flex-direction: column;    
+    width: 49%;
+
+}
+.three-feilds label{    
+    padding: 8px;
+    font-size: 18px;    
+}
+.three-feilds  input{
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+}
+
+.radio-buttons{
+    border: 1px solid white;
+    width: 49%;    
+}
+
+.three-feilds select{
+    padding: 13px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+
+}
+
+.three-feilds select option{
+    color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------application from ends here ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
 
 
 /*----------------------------------------------------------------------------------------------- course section ends--------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+
+/*----------------------------------------------------------------------------------------------- term and condition-page css start ------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.trem-and-condition-main{
+    padding: 5%;
+}
+
+.term-and-condition-content p{
+    
+    gap: 10px;
+    margin-top: 1%;
+    font-size: 17px;
+    line-height: 1.7rem;
+}
+
+.large-heading p{
+    font-size: 1.7rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 600;
+    color: #152038;
+    border-bottom: 2px solid #162645;
+    
+}
+
+.bold-color{
+    color: #F34A31;
+    font-weight: 600;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------- term and condition ends ------------------------------------------------------------------------------------------------------------------------------------------------------------*/

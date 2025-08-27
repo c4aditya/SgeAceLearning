@@ -158,16 +158,16 @@ button:hover {
 }
 
 .main-side-bar {
-    display: none;
+    display: none;    
+   
+    
 }
 
 .side-nav-bar {
 
     position: absolute;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    height:50vh;
     gap: 20px;
     background-color: #162645;
     color: white;
@@ -176,16 +176,30 @@ button:hover {
 }
 
 
-.pages-list-side-bar {}
+.pages-list-side-bar {
+
+    display: flex;
+    flex-direction: column;
+    
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
 
 .pages-list-side-bar ul {
     list-style: none;
+    width: 100%;
+    text-align: center;
 
 }
 
 .pages-list-side-bar ul li {
     display: flex;
-    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 20px;
     padding: 2%;
     font-size: 18px;
     font-weight: 600;
@@ -1315,7 +1329,10 @@ input[type="number"] {
 
 }
 
-.main-copy span {
+.main-copy b svg{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
     display: flex;
     border: 1px solid #162645;
 
@@ -1345,6 +1362,10 @@ input[type="number"] {
     font-size: 16px;
     letter-spacing: .6px;
     font-weight: 600;
+}
+
+.list-links-on-footer ul li:hover{
+    cursor: pointer;
 }
 
 .line {
@@ -1509,7 +1530,8 @@ input[type="number"] {
     }
 
     .main-side-bar {
-        display: block;
+
+        display: block
     }
 
     .hamburger button {
@@ -1661,10 +1683,58 @@ input[type="number"] {
 
     /* -------------------------------------------------------------------- course details section ends -------------------------------------------------------------------------------------------------- */
 
+    /*---------------------------------------------------------------------- About us css start -----------------------------------------------------------------------------------------------------------*/
+    
+.per-page-poster-content{
+    width: 90%;
+}
+.per-page-poster-content p {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.per-poster-para{
+    width: 90%;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+.our-future{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+.main-class-future{
+    width: 100%;
+}
+
+.varify-by-name-and-subnames {
+    grid-template-columns: repeat(2,1fr);
+}
+.student-review-main-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.main-student-div{
+    height: 100%;
+}
+.right-side-our-program img {
+    width: 100%;
+   
+}
+
+.history-of-us{
+    margin-top: 2%;
+}
+    /* ---------------------------------------------------------------------- About us css ends------------------------------------------------------------------------------------------------------------ */
+
 }
 
 
 @media only screen and (max-width: 600px) {
+
 
         .hamburger button svg {
             font-size: 1.7rem;
@@ -1844,6 +1914,24 @@ input[type="number"] {
         width: 60px;
         padding: 5px;
     }
+
+
+    /* about us css */
+
+    .our-future{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .varify-by-name-and-subnames{
+        grid-template-columns: repeat(1,1fr);
+    }
+        .student-review-main-div{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .student-message {
+            height: 250px;
+        }
 
 }
 

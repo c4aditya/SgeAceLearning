@@ -77,7 +77,7 @@ function CourseSection({ contactUs }) {
                 </div>
 
               
-                <div className="course_data">
+                <div  className="course_data">
                     {
                         Course.map((data) => (
                             <motion.div
@@ -85,7 +85,8 @@ function CourseSection({ contactUs }) {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, amount: 0.3 }}
-                                className="course-card">
+                                className="course-card"
+                                onClick={() => nevigate("/courseDeatils", { state: data })}>
 
                                 <div className="course-images">
                                     <img src={data.image} />
@@ -119,14 +120,7 @@ function CourseSection({ contactUs }) {
 
 
 
-                                <hr className="card-hr"></hr>
 
-                                <div className="course-cards-buttons">
-
-                                    <button onClick={() => nevigate("/courseDeatils", { state: data })}>Course Details </button>
-                                    <button onClick={() => contactUs.current.scrollIntoView({ behaviour: "smooth" })}>Enquiry Now</button>
-
-                                </div>
 
                             </motion.div>
                         ))}
