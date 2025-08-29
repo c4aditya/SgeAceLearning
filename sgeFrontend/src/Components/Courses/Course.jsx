@@ -68,7 +68,7 @@ function CourseSection({ contactUs }) {
                         viewport={{ once: true, amount: 0.3 }}
                         className="right-side-our-program">
 
-                        <img src="https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/13.jpg"></img>
+                        <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1756443830/traningPoster_spkrer.avif" alt="posterimage" loading="lazy"></img>
 
 
                     </motion.div>

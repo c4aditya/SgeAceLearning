@@ -34,7 +34,7 @@ const Course = [
   },
   {
     id: 2,
-    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754145119/DeWatermark.ai_1754145107307_fmhaqw.jpg",
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1756444180/Hotel_Management_-_An_Emerging_career_o4dzpz.jpg",
     name: "CERTIFICATION IN HOTEL MANAGEMENT",
     type:"Hotel",
     price: "29,000",
@@ -67,7 +67,7 @@ const Course = [
   },
   {
     id: 3,
-    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754145119/DeWatermark.ai_1754145107307_fmhaqw.jpg",
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1756444850/6_jgpnvo.jpg",
     name: "CERTIFICATION IN AIRPORT MANAGEMENT",
     price: "27,000",
      type:"Aviation",
@@ -133,7 +133,7 @@ const Course = [
   },
   {
     id: 5,
-    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754145124/DeWatermark.ai_1754145075513_ibh9lc.jpg",
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1756444859/Air-Hostess-Course-in-Delhi-Flying-Queen-Air-Hostess-Academy-Pitampura-Rohini-Flying-Queen-Air-Hostess-Institute-Rani-Bagh-Delhi-Air-Hostess-Course-near-me-Diploma-in-Air-Hostess-Training-in-Delhi_k640j1.jpg",
     name: "CERTIFICATION IN AIR HOSTESS",
     price: "68,000",
      oldPrice:"30,000",
@@ -166,7 +166,7 @@ const Course = [
   },
   {
     id: 6,
-    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1756444843/1753947843195_bosece.jpg",
     name: "CERTIFICATION IN CRUISE SHIP",
     type:"Ship",
     price: "36,500",
@@ -198,107 +198,107 @@ const Course = [
       five:"with Doubt Assistance",
     }
   },
-   {
-    id: 7,
-    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
-    name: "CERTIFICATION IN CRUISE SHIP",
-    type:"hr",
-    price: "36,500",
-    
-     oldPrice:"30,000",
-    courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service. This course also covers event management, safety drills, and cultural sensitivity to prepare students for diverse roles on the cruise line.",
-    rating: "4",
-    language: "Hindi",
-    hours: "58 hr+",
-    whatYouWillGet: {
-      one: " Official recognition in cruise hospitality.",
-      two: "Continuous assistance throughout coursework.",
-      three: " Regular knowledge assessments.",
-      four: " Practical skills for cruise ship roles.",
-      five: "In-depth modules on cruise operations and safety."
-    },
-    jobResponsibilities: {
-      one: "Manage guest relations and onboard services.",
-      two: "Ensure safety protocols are followed on deck.",
-      three: "Assist in planning and executing cruise events.",
-      four: "Provide excellent customer service to diverse guests.",
-      five: "Coordinate with ship management and crew members."
-    },
-      courseInclude:{
-      one:"No Pre-requisite Required",
-      two:"50+ hours On-Demand Video",
-      three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
-      five:"with Doubt Assistance",
-    }
-  },
-   {
-    id: 8,
-    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
-    name: "CERTIFICATION IN CRUISE SHIP",
-     type:"hr",
-    price: "36,500",
-     oldPrice:"30,000",
-    courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service. This course also covers event management, safety drills, and cultural sensitivity to prepare students for diverse roles on the cruise line.",
-    rating: "4",
-    language: "Hindi",
-     type:"hr",
-    hours: "58 hr+",
-    whatYouWillGet: {
-      one: " Official recognition in cruise hospitality.",
-      two: "Continuous assistance throughout coursework.",
-      three: " Regular knowledge assessments.",
-      four: " Practical skills for cruise ship roles.",
-      five: "In-depth modules on cruise operations and safety."
-    },
-    jobResponsibilities: {
-      one: "Manage guest relations and onboard services.",
-      two: "Ensure safety protocols are followed on deck.",
-      three: "Assist in planning and executing cruise events.",
-      four: "Provide excellent customer service to diverse guests.",
-      five: "Coordinate with ship management and crew members."
-    },
-      courseInclude:{
-      one:"No Pre-requisite Required",
-      two:"50+ hours On-Demand Video",
-      three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
-      five:"with Doubt Assistance",
-    }
-  },
-   {
-    id: 9,
-    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1754144096/alonso-reyes-haZNHEV2WXQ-unsplash_fa0fy7.jpg",
-    name: "CERTIFICATION IN CRUISE SHIP",
-     type:"hr",
-    price: "36,500",
-     oldPrice:"30,000",
-    courseDetails: "A professional cruise ship course teaching hospitality, customer service, safety, and onboard operations. Good for careers in cruise entertainment and service. This course also covers event management, safety drills, and cultural sensitivity to prepare students for diverse roles on the cruise line.",
-    rating: "4",
-    language: "Hindi",
-    hours: "58 hr+",
-    whatYouWillGet: {
-      one: " Official recognition in cruise hospitality.",
-      two: "Continuous assistance throughout coursework.",
-      three: " Regular knowledge assessments.",
-      four: " Practical skills for cruise ship roles.",
-      five: "In-depth modules on cruise operations and safety."
-    },
-    jobResponsibilities: {
-      one: "Manage guest relations and onboard services.",
-      two: "Ensure safety protocols are followed on deck.",
-      three: "Assist in planning and executing cruise events.",
-      four: "Provide excellent customer service to diverse guests.",
-      five: "Coordinate with ship management and crew members."
-    },
-      courseInclude:{
-      one:"No Pre-requisite Required",
-      two:"50+ hours On-Demand Video",
-      three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
-      five:"with Doubt Assistance",
-    }
-  }
+ {
+id: 7,
+image:"https://res.cloudinary.com/dxgmovaih/image/upload/v1756444887/human-resources-1-825x510_hphw7q.webp",
+name: "Certification in Human Resource Management",
+type: "hr",
+price: "36,500",
+oldPrice: "30,000",
+courseDetails: "A comprehensive HR management course covering recruitment, onboarding, performance evaluation, labour law compliance, and ethical HR practices. Designed to prepare students for a corporate HR career with practical case studies and skill-building assignments.",
+rating: "4",
+language: "English",
+hours: "58 hr+",
+whatYouWillGet: {
+one: "Industry-recognized HR certification.",
+two: "Continuous mentorship and guidance.",
+three: "Regular skill assessments and progress reviews.",
+four: "Hands-on training in core HR tasks.",
+five: "Detailed modules in HR operations and labor law compliance."
+},
+jobResponsibilities: {
+one: "Manage talent acquisition and employee onboarding.",
+two: "Ensure compliance with legal and company policies.",
+three: "Assist with performance management and evaluations.",
+four: "Handle employee relations and engagement programs.",
+five: "Support organizational development initiatives."
+},
+courseInclude: {
+one: "No prior qualification required.",
+two: "50+ hours of on-demand HR video learning.",
+three: "Live interview prep & expert guidance sessions.",
+four: "Revision and doubt-clearing classes.",
+five: "Dedicated support for questions and clarifications."
+}
+},
+
+{
+id: 8,
+image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1756444877/Innozant-One-of-the-best-Data-analytics-training-institute-in-Delhi-NCR_neayae.jpg",
+name: "HR Analytics & Employee Engagement Certification",
+type: "hr",
+price: "36,500",
+oldPrice: "30,000",
+courseDetails: "This program focuses on HR analytics and employee engagement strategies, including workforce metrics, retention techniques, survey design, and data-driven HR decision-making. Suitable for HR professionals wanting to master analytics and engagement in modern organizations.",
+rating: "4",
+language: "English",
+hours: "58 hr+",
+whatYouWillGet: {
+one: "HR analytics and engagement skills certification.",
+two: "One-on-one guidance from HR data experts.",
+three: "Assignments based on real HR analytics scenarios.",
+four: "Advanced skills in HR-related data analysis.",
+five: "Modules on retention strategies and workforce satisfaction."
+},
+jobResponsibilities: {
+one: "Analyze workforce metrics to drive people decisions.",
+two: "Design and implement employee engagement initiatives.",
+three: "Prepare HR analytics reports to management.",
+four: "Facilitate feedback and engagement surveys.",
+five: "Develop retention and satisfaction strategies."
+},
+courseInclude: {
+one: "No analytics background required.",
+two: "50+ hours video on HR analytics concepts.",
+three: "Live project mentorship and analytics coaching.",
+four: "Revision and troubleshooting sessions.",
+five: "Support using HR analytics tools and methods."
+}
+},
+
+{
+id: 9,
+image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1756445606/promo-image.1734861089_trnvfv.png",
+name: "Strategic HR Leadership Certification",
+type: "hr",
+price: "36,500",
+oldPrice: "30,000",
+courseDetails: "A leadership-level HR certification focusing on strategic planning, change management, diversity and inclusion, risk mitigation, and executive communication skills. Best for aspiring managers and HR leaders advancing to strategic roles.",
+rating: "4",
+language: "English",
+hours: "58 hr+",
+whatYouWillGet: {
+one: "Certified recognition in HR strategic leadership.",
+two: "Leadership coaching and executive mentoring.",
+three: "Assignments based on real-world HR leadership scenarios.",
+four: "Skills for managing diverse teams and initiatives.",
+five: "Comprehensive curriculum in HR strategy and change."
+},
+jobResponsibilities: {
+one: "Lead strategic HR planning and implementation.",
+two: "Manage change and inclusion initiatives across teams.",
+three: "Coach and develop HR team members.",
+four: "Maintain compliance and mitigate HR risks.",
+five: "Communicate HR goals and results to senior management."
+},
+courseInclude: {
+one: "No management experience required.",
+two: "50+ hours of strategic HR leadership content.",
+three: "Live executive coaching and leadership workshops.",
+four: "Revision and strategic skill-building sessions.",
+five: "Ongoing leadership mentorship."
+}
+}
 ]
 
 export default Course;

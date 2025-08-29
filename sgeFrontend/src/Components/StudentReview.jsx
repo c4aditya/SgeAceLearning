@@ -6,33 +6,31 @@ function StudentReview() {
     const StudentData = [
         {
             id: 1,
-            image:"https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/09.jpg",
-            studentName: "Ankit Singh",
-            positionName: "Groud Staff",
-            studentMessage: "Sgeace Learning’s aviation course provided me with practical skills and the confidence needed to succeed in this dynamic and fast-paced industry. The curriculum covers all essential aspects thoroughly, helping me build a strong foundation for my aviation career."
+            image:"https://do6gp1uxl3luu.cloudfront.net/assets/testimonials/shreya-prasad.webp",
+            studentName: "Ankita Singh",
+            studentMessage: "Sgace Learning’s aviation course provided me with practical skills and the confidence needed to succeed in this dynamic and fast-paced industry. The curriculum covers all essential aspects thoroughly, helping me build a strong foundation for my aviation career."
         },
         {
             id: 2,
-             image:"https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/09.jpg",
-            studentName: "Prince Kumar ",
-            positionName: "Groud Staff",
-            studentMessage: "The well-organized lessons at Sgeace Learning made even the most complex aviation concepts easy to understand. The instructors are knowledgeable and supportive, which made the entire learning experience engaging and productive"
+             image:"https://do6gp1uxl3luu.cloudfront.net/assets/testimonials/abhay-goel.webp",
+            studentName: "Prince Kumar" ,
+            studentMessage: "The well-organized lessons at Sgace Learning made even the most complex aviation concepts easy to understand. The instructors are knowledgeable and supportive, which made the entire learning experience engaging and productive"
         },
 
         {
             id: 3,
-             image:"https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/09.jpg",
+             image:"https://do6gp1uxl3luu.cloudfront.net/assets/testimonials/s-s.webp",
             studentName: "Saurabh Yadav ",
-            positionName: "Groud Staff",
-            studentMessage: "Thanks to Sgeace Learning, I now have a solid understanding of aviation operations and safety procedures. Their comprehensive training and real-world insights gave me the confidence to pursue my career goals in aviation with clarity"
+            
+            studentMessage: "Thanks to Sgace Learning, I now have a solid understanding of aviation operations and safety procedures. Their comprehensive training and real-world insights gave me the confidence to pursue my career goals in aviation with clarity"
         },
 
          {
             id: 4,
-             image:"https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/09.jpg",
+             image:"https://do6gp1uxl3luu.cloudfront.net/assets/testimonials/anand-gadagin.webp",
             studentName: "Amit singh ",
-            positionName: "Groud Staff",
-            studentMessage: "Sgeace Learning covers all crucial areas for aviation careers, from ground staff responsibilities to cabin crew training. Their detailed modules and practical approach are perfect for anyone looking to start and thrive in the aviation sector"
+            
+            studentMessage: "Sgace Learning covers all crucial areas for aviation careers, from ground staff responsibilities to cabin crew training. Their detailed modules and practical approach are perfect for anyone looking to start and thrive in the aviation sector"
         }
 
     ]

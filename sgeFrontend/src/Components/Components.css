@@ -390,10 +390,11 @@ button:hover {
 .main-hero-section {
     overflow: hidden;
     color: white;
-    background: url("https://res.cloudinary.com/dxgmovaih/image/upload/v1754126712/17_eb2deh.jpg");
+    background: url("https://images.unsplash.com/photo-1642732029645-b5fcffc1136d?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
     width: 100%;
 
 }
