@@ -182,7 +182,7 @@ function CourseSection({ contactUs }) {
                             viewport={{ once: true, amount: 0.3 }}
                             className="right-side-our-program">
 
-                            <img src="https://demo.creativemox.com/aviatora/wp-content/uploads/sites/9/2023/09/8.jpg"></img>
+                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1756448138/DeWatermark.ai_1756448119929_rtuyqo.jpg"></img>
 
 
                         </motion.div>

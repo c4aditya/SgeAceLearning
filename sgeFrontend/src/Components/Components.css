@@ -1792,13 +1792,12 @@ input[type="number"] {
 
     .top-nev {
         flex-direction: column;
-        gap: 10px;
-        display: none;
+        gap: 10px;       
 
     }
 
     .contact-details {
-        padding: 5% 0%;
+        padding: 1% 0%;
         width: 100%;
         justify-content: space-between;
     }
@@ -1807,6 +1806,12 @@ input[type="number"] {
 
         width: 100%;
         font-size: 20px;
+        
+    }
+
+    .contact-details ul li {
+        font-size: 14px;
+        
     }
 
     .social-media-links {
@@ -1824,7 +1829,7 @@ input[type="number"] {
 
     .social-media-links ul {
         gap: 10px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .company-discripction-heading {

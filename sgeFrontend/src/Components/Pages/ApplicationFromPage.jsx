@@ -1,262 +1,258 @@
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function ApplicationForm() {
-    const leftVariants = {
-        hidden: { opacity: 0, x: -100 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
-    };
+  const [form, setForm] = useState({
+    fullName: "",
+    fatherName: "",
+    contact: "",
+    email: "",
+    dob: "",
+    gender: "",
+    aadhar: "",
+    pan: "",
+    qualification: "",
+    marksheet: null,
+    aadharFile: null,
+  });
 
-    return (
-        <>
+  const leftVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
 
-            <section>
+  function handleChange(e) {
+    const { name, value, type, files } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: type === "file" ? files[0] : value,
+    }));
+  }
 
-                <div className="top-poster-section-contact-us">
+  function validateForm() {
+    if (
+      !form.fullName ||
+      !form.fatherName ||
+      !form.contact ||
+      !form.email ||
+      !form.dob ||
+      !form.gender
+    ) {
+      return false;
+    }
+    return true;
+  }
 
+  function handleSubmit(e) {
+    e.preventDefault();
 
-                    <motion.div
-                        variants={leftVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="main-content-poster-page"
+    if (!validateForm()) {
+      toast.error("Please fill all required fields (*)");
+      return;
+    }
+
+    toast.success("Form submitted successfully!");
+    console.log(form);
+
+    setForm({
+      fullName: "",
+      fatherName: "",
+      contact: "",
+      email: "",
+      dob: "",
+      gender: "",
+      aadhar: "",
+      pan: "",
+      qualification: "",
+      marksheet: null,
+      aadharFile: null,
+    });
+  }
+
+  return (
+    <>
+      <ToastContainer />
+      <section>
+        <div className="top-poster-section-contact-us">
+          <motion.div
+            variants={leftVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="main-content-poster-page"
+          >
+            <div className="company-name">
+              <p>Application</p>
+            </div>
+            <div className="per-page-poster-content">
+              <p>Admission Form </p>
+            </div>
+            <div className="per-poster-para">
+              <p>Fill the form for Admission </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section>
+        <div className="addmission-form">
+          <form onSubmit={handleSubmit}>
+            <div className="main-class-form">
+              <p className="heading-form">Apply Now</p>
+              <hr />
+              <div className="wrapper-from">
+                <div className="input-form-for-three-input">
+                  <div className="three-feilds">
+                    <label>Full Name *</label>
+                    <input
+                      type="text"
+                      name="fullName"
+                      value={form.fullName}
+                      onChange={handleChange}
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div className="three-feilds">
+                    <label>Father's Name *</label>
+                    <input
+                      type="text"
+                      name="fatherName"
+                      value={form.fatherName}
+                      onChange={handleChange}
+                      placeholder="Father's Name"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="wrapper-from">
+                <div className="input-form-for-three-input">
+                  <div className="three-feilds">
+                    <label>Contact *</label>
+                    <input
+                      type="text"
+                      name="contact"
+                      value={form.contact}
+                      onChange={handleChange}
+                      placeholder="Contact Number"
+                    />
+                  </div>
+                  <div className="three-feilds">
+                    <label>Email *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      placeholder="Your @email"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="wrapper-from">
+                <div className="input-form-for-three-input">
+                  <div className="three-feilds">
+                    <label>DOB *</label>
+                    <input
+                      type="date"
+                      name="dob"
+                      value={form.dob}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="three-feilds">
+                    <label>Gender *</label>
+                    <select
+                      name="gender"
+                      value={form.gender}
+                      onChange={handleChange}
                     >
-
-
-                        <div className="company-name">
-                            <p>Application</p>
-                        </div>
-
-                        <div className="per-page-poster-content">
-                            <p>Admission Form </p>
-                        </div>
-
-                        <div className="per-poster-para">
-
-                            <p>Fill the form for Admission </p>
-                        </div>
-                    </motion.div>
-
-
-
+                      <option value="">Select Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
                 </div>
-
-            </section>
-
-            <section>
-                <div className="addmission-form">
-
-
-
-                    <form>
-                        <div className="main-class-form">
-                            <p className="heading-form">Apply Now</p>
-
-                            <hr></hr>
-
-
-
-                            <div className="wrapper-from">
-                                <div className="input-form-for-three-input">
-
-                                    <div className="three-feilds">
-
-                                        <label>Full Name * </label>
-                                        <input
-                                            type="text"
-                                            placeholder="First Name"
-                                        />
-
-                                    </div>
-
-                                    <div className="three-feilds">
-
-                                        <label>Father's Name * </label>
-                                        <input
-                                            type="text"
-                                            placeholder="Middle Name"
-                                        />
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="wrapper-from">
-                                <div className="input-form-for-three-input">
-
-                                    <div className="three-feilds">
-
-                                        <label>Contact * </label>
-                                        <input
-                                            type="numer"
-                                            placeholder="First Name"
-                                        />
-
-                                    </div>
-
-                                    <div className="three-feilds">
-
-                                        <label>Email * </label>
-                                        <input
-                                            type="text"
-                                            placeholder="Your @email"
-                                        />
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div className="wrapper-from">
-                                <div className="input-form-for-three-input">
-
-                                    <div className="three-feilds">
-
-                                        <label>DOB * </label>
-                                        <input
-                                            type="numer"
-                                            placeholder="Date of Birth"
-                                        />
-
-                                    </div>
-
-                                    <div className="three-feilds">
-
-                                        <label>Gender * </label>
-                                        <input
-                                            type="numer"
-                                            placeholder="Gender"
-                                        />
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-                            <div className="wrapper-from">
-                                <div className="input-form-for-three-input">
-
-                                    <div className="three-feilds">
-
-                                        <label>Aadhar Card No</label>
-                                        <input
-                                            type="numer"
-                                            placeholder="Aadhar Card No. "
-                                        />
-
-                                    </div>
-
-                                    <div className="three-feilds">
-
-                                        <label>Pan Card</label>
-                                        <input
-                                            type="text"
-                                            placeholder="Pan Card No. "
-                                        />
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div className="wrapper-from">
-                                <div className="input-form-for-three-input">
-
-                                    <div className="three-feilds">
-
-                                        <label>Higest Qualification </label>
-                                        <select>
-                                            <option value="">Select Qualification</option>
-                                            <option value="10th">10th</option>
-                                            <option value="12th">12th</option>
-                                            <option value="bachelors">Bachelor's</option>
-                                            <option value="masters">Master's</option>
-                                           
-                                        </select>
-                                    </div>
-
-                                    <div className="three-feilds">
-
-                                        <label>Gender</label>
-                                        <input
-                                            type="text"
-                                            placeholder="Your @email"
-                                        />
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div className="wrapper-from">
-                                <div className="input-form-for-three-input">
-
-                                    <div className="three-feilds">
-
-                                        <label>DOB</label>
-                                        <input
-                                            type="numer"
-                                            placeholder="First Name"
-                                        />
-
-                                    </div>
-
-                                    <div className="three-feilds">
-
-                                        <label>Gender</label>
-                                        <input
-                                            type="text"
-                                            placeholder="Your @email"
-                                        />
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div className="wrapper-from">
-                                <div className="input-form-for-three-input">
-
-                                    <div className="three-feilds">
-
-                                        <label>DOB</label>
-                                        <input
-                                            type="numer"
-                                            placeholder="First Name"
-                                        />
-
-                                    </div>
-
-                                    <div className="three-feilds">
-
-                                        <label>Gender</label>
-                                        <input
-                                            type="text"
-                                            placeholder="Your @email"
-                                        />
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-                        </div>
-                    </form>
-
-
+              </div>
+
+              <div className="wrapper-from">
+                <div className="input-form-for-three-input">
+                  <div className="three-feilds">
+                    <label>Aadhar Card No</label>
+                    <input
+                      type="text"
+                      name="aadhar"
+                      value={form.aadhar}
+                      onChange={handleChange}
+                      placeholder="Aadhar Card No."
+                    />
+                  </div>
+                  <div className="three-feilds">
+                    <label>Pan Card</label>
+                    <input
+                      type="text"
+                      name="pan"
+                      value={form.pan}
+                      onChange={handleChange}
+                      placeholder="Pan Card No."
+                    />
+                  </div>
                 </div>
-            </section>
+              </div>
 
-        </>
-    )
+              <div className="wrapper-from">
+                <div className="input-form-for-three-input">
+                  <div className="three-feilds">
+                    <label>Highest Qualification</label>
+                    <select
+                      name="qualification"
+                      value={form.qualification}
+                      onChange={handleChange}
+                    >
+                      <option value="">Select Qualification</option>
+                      <option value="10th">10th</option>
+                      <option value="12th">12th</option>
+                      <option value="bachelors">Bachelor's</option>
+                      <option value="masters">Master's</option>
+                    </select>
+                  </div>
+                  <div className="three-feilds">
+                    <label>Highest Qualification Marksheet *</label>
+                    <input
+                      type="file"
+                      name="marksheet"
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="wrapper-from">
+                <div className="input-form-for-three-input">
+                  <div className="three-feilds">
+                    <label>Aadhar Card *</label>
+                    <input
+                      type="file"
+                      name="aadharFile"
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="buttons-form">
+                <button className="subit-button" type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default ApplicationForm;
