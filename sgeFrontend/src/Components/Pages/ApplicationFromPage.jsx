@@ -244,6 +244,22 @@ function ApplicationForm() {
                 </div>
               </div>
 
+              <div className="wrapper-fro">
+                <div className="check-box-recived">
+                  
+                    
+                    <input
+                      type="checkbox"
+                      name="aadharFile"
+                      onChange={handleChange}
+                    />
+
+                    <label>I have read all the terms and condition before filling the form </label>
+                  
+                </div>
+              </div>
+
+
               <div className="buttons-form">
                 <button className="subit-button" type="submit">Submit</button>
               </div>
