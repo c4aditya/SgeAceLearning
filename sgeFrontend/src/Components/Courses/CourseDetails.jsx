@@ -5,10 +5,12 @@ import { IoLanguageOutline } from "react-icons/io5";
 import { RiTimeFill } from "react-icons/ri";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { FaIndianRupeeSign } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 function CourseDetails() {
     const location = useLocation();
     const data = location.state;
+    const navigate = useNavigate();
     const leftVariants = {
         hidden: { opacity: 0, x: -100 },
         visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
@@ -127,7 +129,7 @@ function CourseDetails() {
                             </div>
 
                              <div className="enroll-btn">
-                            <button>Enroll Now </button>
+                            <button onClick={()=> navigate("/applicationForm")}>Enroll Now </button>
                         </div>
                            
                         </div>
