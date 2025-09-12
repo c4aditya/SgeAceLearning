@@ -16,6 +16,7 @@ function ApplicationForm() {
     qualification: "",
     marksheet: null,
     aadharFile: null,
+    termsAccepted: false,
   });
 
   const leftVariants = {
@@ -24,11 +25,23 @@ function ApplicationForm() {
   };
 
   function handleChange(e) {
-    const { name, value, type, files } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: type === "file" ? files[0] : value,
-    }));
+    const { name, value, type, files, checked } = e.target;
+    if (type === "file") {
+      setForm((prev) => ({
+        ...prev,
+        [name]: files[0] || null,
+      }));
+    } else if (type === "checkbox") {
+      setForm((prev) => ({
+        ...prev,
+        [name]: checked,
+      }));
+    } else {
+      setForm((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    }
   }
 
   function validateForm() {
@@ -38,7 +51,8 @@ function ApplicationForm() {
       !form.contact ||
       !form.email ||
       !form.dob ||
-      !form.gender
+      !form.gender ||
+      !form.termsAccepted
     ) {
       return false;
     }
@@ -49,26 +63,48 @@ function ApplicationForm() {
     e.preventDefault();
 
     if (!validateForm()) {
-      toast.error("Please fill all required fields (*)");
+      toast.error("Please fill all required fields (*) and accept terms");
       return;
     }
 
-    toast.success("Form submitted successfully!");
-    console.log(form);
+    const formDataToSend = new FormData();
 
-    setForm({
-      fullName: "",
-      fatherName: "",
-      contact: "",
-      email: "",
-      dob: "",
-      gender: "",
-      aadhar: "",
-      pan: "",
-      qualification: "",
-      marksheet: null,
-      aadharFile: null,
-    });
+    for (const key in form) {
+      if (key !== "marksheet" && key !== "aadharFile") {
+        formDataToSend.append(key, form[key]);
+      }
+    }
+
+    if (form.marksheet) formDataToSend.append("marksheet", form.marksheet);
+    if (form.aadharFile) formDataToSend.append("aadharFile", form.aadharFile);
+
+    fetch("https://api.acelearningtraining.com/api/submit-application", {
+      method: "POST",
+      body: formDataToSend,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        toast.success("Form submitted successfully!");
+        console.log(data);
+        setForm({
+          fullName: "",
+          fatherName: "",
+          contact: "",
+          email: "",
+          dob: "",
+          gender: "",
+          aadhar: "",
+          pan: "",
+          qualification: "",
+          marksheet: null,
+          aadharFile: null,
+          termsAccepted: false,
+        });
+      })
+      .catch((err) => {
+        toast.error("Submission failed. Please try again.");
+        console.error(err);
+      });
   }
 
   return (
@@ -216,8 +252,8 @@ function ApplicationForm() {
                       <option value="">Select Qualification</option>
                       <option value="10th">10th</option>
                       <option value="12th">12th</option>
-                      <option value="bachelors">Bachelor's</option>
-                      <option value="masters">Master's</option>
+                      <option value="bachelors">Bachelor&apos;s</option>
+                      <option value="masters">Master&apos;s</option>
                     </select>
                   </div>
                   <div className="three-feilds">
@@ -246,22 +282,23 @@ function ApplicationForm() {
 
               <div className="wrapper-fro">
                 <div className="check-box-recived">
-                  
-                    
-                    <input
-                      type="checkbox"
-                      name="aadharFile"
-                      onChange={handleChange}
-                    />
-
-                    <label>I have read all the terms and condition before filling the form </label>
-                  
+                  <input
+                    type="checkbox"
+                    name="termsAccepted"
+                    checked={form.termsAccepted}
+                    onChange={handleChange}
+                  />
+                  <label>
+                    I have read all the terms and condition before filling the
+                    form
+                  </label>
                 </div>
               </div>
 
-
               <div className="buttons-form">
-                <button className="subit-button" type="submit">Submit</button>
+                <button className="subit-button" type="submit">
+                  Submit
+                </button>
               </div>
             </div>
           </form>

@@ -126,7 +126,7 @@ function NavBar() {
                                     <li> <button onClick={() => Nevigate("/aboutus")}> ABOUT US </button> </li>
                                     <li><button onClick={() => Nevigate("/ourCourses")} >TRANING PROGRAM </button></li>
                                     <li><button onClick={() => Nevigate("/contactUs")} >CONTACT US </button></li>
-                                    <li><button onClick={() => footer.current.scrollIntoView({ behavior: "smooth" })} >MORE INFO </button></li>
+                                    <li><button onClick={() => Nevigate("/termAndCondition")}> TERMS AND CONDITIONS </button></li>
 
                                 </ul>
                             </div>
@@ -175,7 +175,7 @@ function NavBar() {
                                             <li onClick={() => { Nevigate("/aboutus") , closeSideBar() }}>About us</li>
                                             <li onClick={() => { Nevigate("/ourCourses") , closeSideBar() }}>Training Program</li>
                                             <li onClick={() => { Nevigate("/contactUs"), closeSideBar()}}>Contact us</li>
-                                            <li onClick={() => { closeSideBar(); }}>More</li>
+                                            <li onClick={() => { closeSideBar(); }}>Terms and conditions</li>
 
                                         </ul>
 

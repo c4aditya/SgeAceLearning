@@ -19,13 +19,14 @@ function OurCourses() {
 
         console.log("the button is clicked")
         // console.log(event.target.innerHTML.toLowerCase());
+        
         CourseType = event.target.innerHTML.toLowerCase().trim();
         // console.log(CourseType)       
+        
         const filterCourse = Course.filter(course => course.type.toLowerCase() === CourseType);
         // console.log(filterCourse)
         setCourseData(filterCourse)
         console.log(courseData)
-
 
     }
 
