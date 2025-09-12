@@ -22,7 +22,7 @@ function Footer() {
                         <div className="history-and-social-meadia-links-footer">
 
                             <div className="history-of-us">
-                                <p>SGACE Learning Training Institute (OPC) Pvt. Ltd., established in 2020 in Kasganj, is MCA-registered and offers modern, hands-on aviation training.With experienced faculty and interactive teaching, we focus on practical learning and real-time simulations.Our mission is to prepare students for success in competitive professional environments through quality education and industry partnerships.</p>
+                                <p>SGACE Learning Training Institute (OPC) Pvt. Ltd., established in 2020 in Near Galla Mandi oppsit Indian Oil petrol pump Amanpur road Kasganj , India, Uttar Pradesh, is MCA-registered and offers modern, hands-on aviation training.With experienced faculty and interactive teaching, we focus on practical learning and real-time simulations.Our mission is to prepare students for success in competitive professional environments through quality education and industry partnerships.</p>
                             </div>
 
                             <div className="footer-section-social-media">

@@ -87,7 +87,7 @@ function AboutUs() {
                                 className="right-side-about-us"
                             >
                                 <div>
-                                    <img src="https://acelearningtraining.com/wp-content/uploads/2024/03/9963629-removebg-preview.png" />
+                                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1757716168/Screenshot_2025-09-13_035821_ra3ybe.png" />
                                 </div>
                             </motion.div>
                         </div>

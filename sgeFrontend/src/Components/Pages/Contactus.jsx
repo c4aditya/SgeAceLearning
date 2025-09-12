@@ -24,7 +24,7 @@ function ContactUs() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://acelearningtraining.com/api/contact", {
+      const response = await fetch("https://api.acelearningtraining.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
