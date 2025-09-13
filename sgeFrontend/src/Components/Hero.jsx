@@ -54,7 +54,7 @@ function Hero() {
               viewport={{ once: true, amount: 0.3 }}
               className="main-poster-buttons">
 
-              <button className="enroll-now">  See Courses  </button>
+              <button className="enroll-now" onClick={()=> navigate("/ourCourses")} >  See Courses  </button>
               <button className="enquiry-now" onClick={()=> navigate("/contactUs")} > Enquiry Now </button>
 
             </motion.div>
@@ -109,7 +109,7 @@ function Hero() {
               >
                 <div className="image-of-persion">
                   <img
-                    src="https://acelearningtraining.com/wp-content/uploads/2024/03/9963629-removebg-preview.png" 
+                    src="https://res.cloudinary.com/dxgmovaih/image/upload/v1757716168/Screenshot_2025-09-13_035821_ra3ybe.png" 
                     alt="Person 1"
                   />
                 </div>
