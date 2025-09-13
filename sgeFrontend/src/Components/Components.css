@@ -1097,8 +1097,7 @@ button:hover {
 }
 
 .contact-ua-top-section {
-    display: flex;
-    justify-content: space-between;
+  
     padding: 5%;
 }
 
@@ -1106,7 +1105,7 @@ button:hover {
     border: 1px solid black;
     background-color: #081021;
     border-radius: 5px;
-    width: 45%;
+
     padding: 2%;
 }
 
@@ -1114,6 +1113,11 @@ button:hover {
     display: flex;
     gap: 20px;
     justify-content: center;
+}
+
+.contact-us-main-content{
+
+width: 100%;
 }
 
 .contact-us-input-feild-form {
@@ -1141,7 +1145,7 @@ label {
 }
 
 input {
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
     background-color: white;
@@ -1227,9 +1231,10 @@ input[type="number"] {
     display: flex;
 
     gap: 10px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     align-items: center;
+    color: #081021;
 }
 
 .content-about-us-hero ul li span {
@@ -1487,6 +1492,14 @@ input[type="number"] {
     color: #152038;
 }
 
+
+.flex-items{
+    
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   align-items: center;
+}
+
 /* ------------------------------------------------------------------------------------ Student Review ends ------------------------------------------------------------------------------------------ */
 
 /*-----------------------------------------------------------------------------------------Responsive css start ------------------------------------------------------------------------------------- */
@@ -1500,7 +1513,10 @@ input[type="number"] {
 
 @media only screen and (max-width: 800px) {
 
+.instructor-images img {
+    width: 100%;
 
+}
 
     .logo {
         width: 10%;
@@ -1634,8 +1650,12 @@ input[type="number"] {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .contact-ua-top-section {
-        flex-direction: column;
+    /* .contact-ua-top-section {
+        grid-template-columns: repeat(1 ,1fr);
+    } */
+
+    .flex-items{
+        grid-template-columns: repeat(1,1fr);
     }
 
     .right-side-contact-us {
@@ -1826,7 +1846,7 @@ input[type="number"] {
     }
 
     .contact-details ul li {
-        font-size: 14px;
+        font-size: 12px;
         
     }
 

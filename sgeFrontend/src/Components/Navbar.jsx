@@ -97,9 +97,9 @@ function NavBar() {
                     <div className="top-nev">
                         <div className="contact-details">
                             <ul>
-                                <li>info@sgeacelearnign.com</li>
+                                <li>admission@acelearningtraining.com</li>
 
-                                <li> 9569300792</li>
+                                <li> +91 9910926523 </li>
                             </ul>
                         </div>
 

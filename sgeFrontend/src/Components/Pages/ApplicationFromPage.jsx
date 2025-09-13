@@ -289,8 +289,7 @@ function ApplicationForm() {
                     onChange={handleChange}
                   />
                   <label>
-                    I have read all the terms and condition before filling the
-                    form
+                     I agree to the terms and conditions and declare that the name, date of birth, address and other information given by me in the online admission form is correct to the best of my knowledge and belief. Which I declare to be truely correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time
                   </label>
                 </div>
               </div>
