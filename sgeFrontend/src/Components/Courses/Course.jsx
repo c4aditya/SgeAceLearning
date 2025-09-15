@@ -272,7 +272,7 @@ function CourseSection({ contactUs }) {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
-                            className="instructor-images">
+                            className="instructor-images hide-images">
                             <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237280/confident-businessman-1414x1536_yvf2g5.jpg">
                             </img>
 

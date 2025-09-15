@@ -737,6 +737,10 @@ button:hover {
     justify-content: space-between;
 }
 
+.buttons{
+    display: flex;
+}
+
 .course-cards-buttons button {
 
     padding: 5px;
@@ -1820,6 +1824,10 @@ input[type="number"] {
 
 @media only screen and (max-width: 600px) {
 
+    .hide-images{
+        display: none;
+    }
+
 
     .hamburger button svg {
         font-size: 1.7rem;
@@ -1839,7 +1847,7 @@ input[type="number"] {
     }
 
     .contact-details ul {
-
+        
         width: 100%;
         font-size: 20px;
         
@@ -2119,6 +2127,30 @@ input[type="number"] {
             padding: 5px !important;
         }
         
+}
+
+
+@media (max-width:380px) {
+        .enroll-now{
+            width:45%;
+            padding: 10px;
+            font-size: 12px;
+        }
+        .enquiry-now {
+            width: 45%;
+              padding: 0px;
+            font-size: 12px;
+        }
+
+        .border-in-course ul li{
+            width: 30%;
+        }
+            .student-review-main-div{
+                grid-template-columns: repeat(1,1fr);
+            }
+                .student-message{
+                    height: 120px;
+                }
 }
 
 
