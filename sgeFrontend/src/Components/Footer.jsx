@@ -97,10 +97,10 @@ function Footer() {
 
                             <div className="list-links-on-footer">
                                 <ul>
-                                    <li>Blogs</li>
-                                    <li>Our Feets</li>
-                                    <li>Aviation News</li>
-                                    <li>Eventd</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Blogs</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Our Feets</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Aviation News</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Eventd</li>
                                 </ul>
                             </div>
 
@@ -114,9 +114,9 @@ function Footer() {
 
                             <div className="list-links-on-footer">
                                 <ul>
-                                    <li>Apply For Admission</li>
-                                    <li>Courses</li>
-                                    <li>Fee Structure</li>
+                                    <li onClick={()=> Navigate("/applicationForm")} >Apply For Admission</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Courses</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Fee Structure</li>
                                     
                                 </ul>
                             </div>

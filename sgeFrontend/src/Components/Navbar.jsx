@@ -103,6 +103,9 @@ function NavBar() {
                             </ul>
                         </div>
 
+                         <div className="enroll">
+                            <button onClick={()=> Nevigate("/applicationForm")}>Enroll Now </button>
+                        </div>
                         <div className="social-media-links">
                             <ul>
                                 <li><PiFacebookLogo /></li>

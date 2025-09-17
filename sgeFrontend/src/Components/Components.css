@@ -737,6 +737,13 @@ button:hover {
     justify-content: space-between;
 }
 
+.enroll{
+    background-color: #F34A31;
+    padding: 5px;
+    text-align: center;
+    width: 10%;
+    border-radius: 2px;
+}
 .buttons{
     display: flex;
 }
