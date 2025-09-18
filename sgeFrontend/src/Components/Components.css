@@ -2155,6 +2155,333 @@ input[type="number"] {
 }
 
 
+
+
+@media only screen and (max-width: 500px) {
+
+    .hide-images {
+        display: none;
+    }
+
+
+    .hamburger button svg {
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
+
+    .top-nev {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+    }
+
+    .contact-details {
+        padding: 1% 0%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .contact-details ul {
+
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    .contact-details ul li {
+        font-size: 12px;
+
+    }
+
+    .social-media-links {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .social-media-links ul {
+        gap: 10px;
+        font-size: 1.5rem;
+    }
+
+    .company-discripction-heading {
+        font-size: 2rem;
+    }
+
+    .company-discripction {
+
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .main-poster-buttons {
+        width: 90%;
+    }
+
+    .about-us-hero {
+        padding: 5%;
+    }
+
+    .image-of-persion img {
+        width: 95%;
+        height: 224px;
+    }
+
+    .posters-adv {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .main-img-posters-adv {
+        width: 100%;
+
+    }
+
+    .content-about-us-hero ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .why-choose-us-section ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .instructor-image-top-class {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .social-media-of-teachers ul {
+        gap: 5px;
+    }
+
+    .submit-contact-us {
+        width: 50%;
+    }
+
+    .instructor-images {
+        width: 90%;
+    }
+
+    .social-media-of-teachers ul {
+        font-size: 1rem;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .history-and-social-meadia-links-footer {
+        margin-top: 15%;
+    }
+
+    .course_data {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-job-p {
+        font-size: 15px;
+    }
+
+    .course-name-course-details p {
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .what-we-will-provide ul {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .course-details {
+        font-size: 14px;
+
+    }
+
+    .job-responsibility ul {
+        font-size: 14px;
+        gap: 5px;
+
+    }
+
+    .with-price {
+        gap: 10px;
+    }
+
+    .course-price p {
+        font-size: 1rem;
+    }
+
+    .enroll-btn button {
+        padding: 5px;
+    }
+
+
+    .what-we-will-provide ul li {
+        align-items: flex-start;
+    }
+
+    .what-we-will-provide ul li span svg {
+        margin-top: 4px;
+    }
+
+    .job-responsibility ul li {
+        align-items: flex-start;
+    }
+
+    .job-responsibility ul li span svg {
+        margin-top: 4px;
+    }
+
+    .footer-image img {
+        width: 60px;
+        padding: 5px;
+    }
+
+
+    /* about us css */
+
+    .our-future {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .varify-by-name-and-subnames {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .student-review-main-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .student-message {
+        height: 250px;
+    }
+
+    .provide ul span {
+        font-size: 1rem;
+    }
+
+    .history-and-social-meadia-links-footer {
+        margin-top: 6%;
+    }
+
+    .button-categoryes {
+        width: 100%;
+    }
+
+
+    /* our course  */
+
+    .c-h {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        letter-spacing: .6px;
+    }
+
+    .buttons-cat {
+        font-size: 14px;
+        font-weight: 500;
+        width: 16%;
+    }
+
+    .buttons-cat button {
+        padding: 0px;
+    }
+
+    .sub-class-our-course {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    .course-image {
+        width: 100%;
+    }
+
+    .course-page-course-content {
+        width: 100%;
+    }
+
+    .course-page-buttons {
+        width: 100%;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .sub-class-our-course {
+        padding: 5px;
+    }
+
+    .large-heading p {
+        font-size: 1.3rem;
+    }
+
+    .course-image {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .course-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .course-page-course-detials {
+        line-height: 1.3rem;
+    }
+
+    /* application from */
+
+    .input-form-for-three-input {
+        flex-direction: column;
+    }
+
+    .three-feilds {
+        width: 100%;
+    }
+
+    .buttons-form button {
+        width: 50%;
+        border-radius: 5px;
+    }
+
+    .three-feilds label {
+        font-size: 14px;
+    }
+
+    .input-form-for-three-input input {
+        padding: 5px !important;
+    }
+
+    .enroll {
+        width: 20%;
+        padding: 2px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+      .f input{
+            width: 100%;
+        }
+
+}
+
+
 @media (max-width:380px) {
     .enroll-now {
         width: 45%;
