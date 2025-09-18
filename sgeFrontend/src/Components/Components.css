@@ -398,16 +398,17 @@ button:hover {
 
 }
 
-.check-box-recived{
-   
+.check-box-recived {
+
     margin-top: 3%;
 }
+
 .check-box-recived {
     display: flex;
     gap: 20px;
 }
 
-.check-box-recived label{
+.check-box-recived label {
     font-size: 1rem;
 }
 
@@ -737,14 +738,15 @@ button:hover {
     justify-content: space-between;
 }
 
-.enroll{
+.enroll {
     background-color: #F34A31;
     padding: 5px;
     text-align: center;
     width: 10%;
     border-radius: 2px;
 }
-.buttons{
+
+.buttons {
     display: flex;
 }
 
@@ -1108,7 +1110,7 @@ button:hover {
 }
 
 .contact-ua-top-section {
-  
+
     padding: 5%;
 }
 
@@ -1126,9 +1128,9 @@ button:hover {
     justify-content: center;
 }
 
-.contact-us-main-content{
+.contact-us-main-content {
 
-width: 100%;
+    width: 100%;
 }
 
 .contact-us-input-feild-form {
@@ -1504,11 +1506,11 @@ input[type="number"] {
 }
 
 
-.flex-items{
-    
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   align-items: center;
+.flex-items {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 /* ------------------------------------------------------------------------------------ Student Review ends ------------------------------------------------------------------------------------------ */
@@ -1524,10 +1526,10 @@ input[type="number"] {
 
 @media only screen and (max-width: 800px) {
 
-.instructor-images img {
-    width: 100%;
+    .instructor-images img {
+        width: 100%;
 
-}
+    }
 
     .logo {
         width: 10%;
@@ -1665,8 +1667,8 @@ input[type="number"] {
         grid-template-columns: repeat(1 ,1fr);
     } */
 
-    .flex-items{
-        grid-template-columns: repeat(1,1fr);
+    .flex-items {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .right-side-contact-us {
@@ -1674,7 +1676,7 @@ input[type="number"] {
         width: 100%;
     }
 
-    .heading-content{
+    .heading-content {
         font-size: 1rem;
     }
 
@@ -1783,7 +1785,7 @@ input[type="number"] {
 
     /* course section starts  */
 
-    .button-categoryes{
+    .button-categoryes {
         width: 100%;
     }
 
@@ -1791,39 +1793,42 @@ input[type="number"] {
         font-size: 1.4rem;
     }
 
-   .course-page-course-name{
-    font-size: 1rem;
-   }
+    .course-page-course-name {
+        font-size: 1rem;
+    }
 
-   .sub-class-our-course{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-   }
+    .sub-class-our-course {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-   .course-page-course-content{
-    width: 100%;
-    
-   }
-   .course-image img{
-    width: 94%;
-    height: 285px;
-    border-radius: 5px;
-   }
+    .course-page-course-content {
+        width: 100%;
 
-   .course-page-buttons{
-    width: 100%;
-    padding: 2px;
-    gap: 5px;
-   }
+    }
 
-   .enq{
-    width: 100%;
-    font-size: 14px;
-    padding: 2px;
-   }
-   .course-price-course-page p{
-    font-size: 14px;
-   }
+    .course-image img {
+        width: 94%;
+        height: 285px;
+        border-radius: 5px;
+    }
+
+    .course-page-buttons {
+        width: 100%;
+        padding: 2px;
+        gap: 5px;
+    }
+
+    .enq {
+        width: 100%;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    .course-price-course-page p {
+        font-size: 14px;
+    }
+
     /* ---------------------------------------------------------------------- About us css ends------------------------------------------------------------------------------------------------------------ */
 
 }
@@ -1831,7 +1836,7 @@ input[type="number"] {
 
 @media only screen and (max-width: 600px) {
 
-    .hide-images{
+    .hide-images {
         display: none;
     }
 
@@ -1843,7 +1848,8 @@ input[type="number"] {
 
     .top-nev {
         flex-direction: column;
-        gap: 10px;       
+        gap: 10px;
+        align-items: center;
 
     }
 
@@ -1854,15 +1860,15 @@ input[type="number"] {
     }
 
     .contact-details ul {
-        
+
         width: 100%;
         font-size: 20px;
-        
+
     }
 
     .contact-details ul li {
         font-size: 12px;
-        
+
     }
 
     .social-media-links {
@@ -2039,7 +2045,7 @@ input[type="number"] {
         height: 250px;
     }
 
-    .provide ul span{
+    .provide ul span {
         font-size: 1rem;
     }
 
@@ -2047,117 +2053,137 @@ input[type="number"] {
         margin-top: 6%;
     }
 
-    .button-categoryes{
+    .button-categoryes {
         width: 100%;
     }
-    
+
 
     /* our course  */
 
-    .c-h{
+    .c-h {
         font-size: 1rem;
         line-height: 1.6rem;
         letter-spacing: .6px;
     }
-    .buttons-cat{
+
+    .buttons-cat {
         font-size: 14px;
         font-weight: 500;
         width: 16%;
     }
 
-     .buttons-cat button{
+    .buttons-cat button {
         padding: 0px;
-     }
-    .sub-class-our-course{
-        grid-template-columns: repeat(1,1fr);
+    }
+
+    .sub-class-our-course {
+        grid-template-columns: repeat(1, 1fr);
         gap: 5px;
     }
 
-    .course-image{
+    .course-image {
         width: 100%;
     }
 
-    .course-page-course-content{
+    .course-page-course-content {
         width: 100%;
     }
 
-    .course-page-buttons{
+    .course-page-buttons {
         width: 100%;
-        border: 2px solid black;        
+        border: 2px solid black;
         padding: 10px;
         border-radius: 10px;
     }
 
-    .sub-class-our-course{
+    .sub-class-our-course {
         padding: 5px;
     }
 
-    .large-heading p{
+    .large-heading p {
         font-size: 1.3rem;
     }
-    
-    .course-image{
-        
+
+    .course-image {
+
         display: flex;
         align-items: center;
         justify-content: center;
     }
-        .course-image img {
-            height: 100%;
-            width: 100%;
-        }
 
-        .course-page-course-detials{
-            line-height: 1.3rem;
-        }
+    .course-image img {
+        height: 100%;
+        width: 100%;
+    }
 
-        /* application from */
+    .course-page-course-detials {
+        line-height: 1.3rem;
+    }
 
-        .input-form-for-three-input{
-            flex-direction: column;
-        }
+    /* application from */
 
-        .three-feilds {
-            width: 100%;
-        }
+    .input-form-for-three-input {
+        flex-direction: column;
+    }
 
-        .buttons-form button{
-            width: 50%;
-            border-radius: 5px;
-        }
+    .three-feilds {
+        width: 100%;
+    }
 
-        .three-feilds label{
-            font-size: 14px;
-        }
+    .buttons-form button {
+        width: 50%;
+        border-radius: 5px;
+    }
 
-        .input-form-for-three-input input{
-            padding: 5px !important;
-        }
-        
+    .three-feilds label {
+        font-size: 14px;
+    }
+
+    .input-form-for-three-input input {
+        padding: 5px !important;
+    }
+
+    .enroll {
+        width: 20%;
+        padding: 2px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
 @media (max-width:380px) {
-        .enroll-now{
-            width:45%;
-            padding: 10px;
-            font-size: 12px;
-        }
-        .enquiry-now {
-            width: 45%;
-              padding: 0px;
-            font-size: 12px;
-        }
+    .enroll-now {
+        width: 45%;
+        padding: 10px;
+        font-size: 12px;
+    }
 
-        .border-in-course ul li{
-            width: 30%;
-        }
-            .student-review-main-div{
-                grid-template-columns: repeat(1,1fr);
-            }
-                .student-message{
-                    height: 120px;
-                }
+    .enquiry-now {
+        width: 45%;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    .border-in-course ul li {
+        width: 30%;
+    }
+
+    .student-review-main-div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .student-message {
+        height: 120px;
+    }
+
+    .contact-ua-top-section {
+        width: 87%;
+        padding: 2%;
+    }
 }
 
 
