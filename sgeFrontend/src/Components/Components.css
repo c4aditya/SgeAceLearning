@@ -2184,6 +2184,10 @@ input[type="number"] {
         width: 87%;
         padding: 2%;
     }
+
+        .main-copy{
+            width: 100%;
+        }
 }
 
 
