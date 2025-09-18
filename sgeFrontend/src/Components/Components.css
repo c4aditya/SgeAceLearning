@@ -2181,11 +2181,15 @@ input[type="number"] {
     }
 
     .contact-ua-top-section {
-        width: 87%;
-        padding: 2%;
+        width: 95%;
+        padding: 0%;
     }
 
         .main-copy{
+            width: 100%;
+        }
+
+        .f input{
             width: 100%;
         }
 }
