@@ -11,6 +11,7 @@ import OurCourses from "./Components/Pages/CoursePage";
 import { useRef } from "react";
 import ApplicationForm from "./Components/Pages/ApplicationFromPage";
 import ScrollToTop from "./Components/ScrollToTop";
+import Certificate from "./Components/Pages/Certificate";
 function App() {
 const footerRef = useRef(null)
 
@@ -32,6 +33,7 @@ const footerRef = useRef(null)
       <Route path="/ourCourses" element={<OurCourses/>} />
       <Route path="/applicationForm" element={<ApplicationForm/>} />
       <Route path="/termAndCondition" element={<TermAndCondition/>} />
+      <Route path="/cartificate" element={<Certificate/>} />
     </Routes>
       <Footer ref = {footerRef}/>
   </Router>

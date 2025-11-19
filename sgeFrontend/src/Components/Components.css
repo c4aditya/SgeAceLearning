@@ -1526,6 +1526,10 @@ input[type="number"] {
 
 @media only screen and (max-width: 800px) {
 
+    .main-certificate-image{
+        padding: 10px;
+        flex-direction: column;
+    }
     .instructor-images img {
         width: 100%;
 
