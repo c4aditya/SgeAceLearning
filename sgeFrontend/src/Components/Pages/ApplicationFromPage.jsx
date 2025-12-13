@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRef } from "react";
 
 function ApplicationForm() {
   const [form, setForm] = useState({
@@ -44,20 +45,44 @@ function ApplicationForm() {
     }
   }
 
+  const fieldRefs = {
+    fullName: useRef(null),
+    fatherName: useRef(null),
+    contact: useRef(null),
+    email: useRef(null),
+    dob: useRef(null),
+    gender: useRef(null),
+    qualification: useRef(null),
+  };
+
+  const [errors, setErrors] = useState({});
+
+
   function validateForm() {
-    if (
-      !form.fullName ||
-      !form.fatherName ||
-      !form.contact ||
-      !form.email ||
-      !form.dob ||
-      !form.gender ||
-      !form.termsAccepted
-    ) {
-      return false;
+    const newErrors = {};
+
+    if (!form.fullName) newErrors.fullName = true;
+    if (!form.fatherName) newErrors.fatherName = true;
+    if (!form.contact) newErrors.contact = true;
+    if (!form.email) newErrors.email = true;
+    if (!form.dob) newErrors.dob = true;
+    if (!form.gender) newErrors.gender = true;
+    if (!form.qualification) newErrors.qualification = true;
+    if (!form.termsAccepted) newErrors.termsAccepted = true;
+
+    setErrors(newErrors);
+
+    const firstErrorField = Object.keys(newErrors)[0];
+    if (firstErrorField && fieldRefs[firstErrorField]) {
+      fieldRefs[firstErrorField].current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
     }
-    return true;
+
+    return Object.keys(newErrors).length === 0;
   }
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -143,21 +168,29 @@ function ApplicationForm() {
                   <div className="three-feilds">
                     <label>Full Name <span>*</span> </label>
                     <input
+                      ref={fieldRefs.fullName}
                       type="text"
                       name="fullName"
                       value={form.fullName}
                       onChange={handleChange}
                       placeholder="First Name"
+                      style={{
+                        border: errors.fullName ? "2px solid red" : "",
+                      }}
                     />
                   </div>
                   <div className="three-feilds">
                     <label>Father's Name <span>*</span> </label>
                     <input
+                      ref={fieldRefs.fatherName}
                       type="text"
                       name="fatherName"
                       value={form.fatherName}
                       onChange={handleChange}
                       placeholder="Father's Name"
+                        style={{
+                        border: errors.fatherName ? "2px solid red" : "",
+                      }}
                     />
                   </div>
                 </div>
@@ -168,21 +201,29 @@ function ApplicationForm() {
                   <div className="three-feilds">
                     <label>Contact <span>*</span></label>
                     <input
+                      ref={fieldRefs.contact}
                       type="text"
                       name="contact"
                       value={form.contact}
                       onChange={handleChange}
                       placeholder="Contact Number"
+                        style={{
+                        border: errors.contact ? "2px solid red" : "",
+                      }}
                     />
                   </div>
                   <div className="three-feilds">
                     <label>Email <span>*</span> </label>
                     <input
+                      ref={fieldRefs.email}
                       type="email"
                       name="email"
                       value={form.email}
                       onChange={handleChange}
                       placeholder="Your @email"
+                        style={{
+                        border: errors.email ? "2px solid red" : "",
+                      }}
                     />
                   </div>
                 </div>
@@ -193,18 +234,26 @@ function ApplicationForm() {
                   <div className="three-feilds">
                     <label>DOB <span>*</span></label>
                     <input
+                      ref={fieldRefs.dob}
                       type="date"
                       name="dob"
                       value={form.dob}
                       onChange={handleChange}
+                        style={{
+                        border: errors.dob ? "2px solid red" : "",
+                      }}
                     />
                   </div>
                   <div className="three-feilds">
                     <label>Gender <span>*</span></label>
                     <select
+                      ref={fieldRefs.gender}
                       name="gender"
                       value={form.gender}
                       onChange={handleChange}
+                        style={{
+                        border: errors.gender ? "2px solid red" : "",
+                      }}
                     >
                       <option value="">Select Gender</option>
                       <option value="Male">Male</option>
@@ -225,6 +274,9 @@ function ApplicationForm() {
                       value={form.aadhar}
                       onChange={handleChange}
                       placeholder="Aadhar Card No."
+                        style={{
+                        border: errors.aadhar ? "2px solid red" : "",
+                      }}
                     />
                   </div>
                   <div className="three-feilds">
@@ -235,6 +287,9 @@ function ApplicationForm() {
                       value={form.pan}
                       onChange={handleChange}
                       placeholder="Pan Card No."
+                        style={{
+                        border: errors.pan ? "2px solid red" : "",
+                      }}
                     />
                   </div>
                 </div>
@@ -248,6 +303,9 @@ function ApplicationForm() {
                       name="qualification"
                       value={form.qualification}
                       onChange={handleChange}
+                        style={{
+                        border: errors.qualification ? "2px solid red" : "",
+                      }}
                     >
                       <option value="">Select Qualification</option>
                       <option value="10th">10th</option>
@@ -262,6 +320,7 @@ function ApplicationForm() {
                       type="file"
                       name="marksheet"
                       onChange={handleChange}
+                      
                     />
                   </div>
                 </div>
@@ -275,6 +334,7 @@ function ApplicationForm() {
                       type="file"
                       name="aadharFile"
                       onChange={handleChange}
+                       
                     />
                   </div>
                 </div>
@@ -287,9 +347,10 @@ function ApplicationForm() {
                     name="termsAccepted"
                     checked={form.termsAccepted}
                     onChange={handleChange}
+                     
                   />
                   <label>
-                     I agree to the terms and conditions and declare that the name, date of birth, address and other information given by me in the online admission form is correct to the best of my knowledge and belief. Which I declare to be truely correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time
+                    I agree to the terms and conditions and declare that the name, date of birth, address and other information given by me in the online admission form is correct to the best of my knowledge and belief. Which I declare to be truely correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time
                   </label>
                 </div>
               </div>
