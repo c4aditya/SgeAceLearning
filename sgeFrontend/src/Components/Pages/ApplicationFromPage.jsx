@@ -141,7 +141,7 @@ function ApplicationForm() {
               <div className="wrapper-from">
                 <div className="input-form-for-three-input">
                   <div className="three-feilds">
-                    <label>Full Name *</label>
+                    <label>Full Name <span>*</span> </label>
                     <input
                       type="text"
                       name="fullName"
@@ -151,7 +151,7 @@ function ApplicationForm() {
                     />
                   </div>
                   <div className="three-feilds">
-                    <label>Father's Name *</label>
+                    <label>Father's Name <span>*</span> </label>
                     <input
                       type="text"
                       name="fatherName"
@@ -166,7 +166,7 @@ function ApplicationForm() {
               <div className="wrapper-from">
                 <div className="input-form-for-three-input">
                   <div className="three-feilds">
-                    <label>Contact *</label>
+                    <label>Contact <span>*</span></label>
                     <input
                       type="text"
                       name="contact"
@@ -176,7 +176,7 @@ function ApplicationForm() {
                     />
                   </div>
                   <div className="three-feilds">
-                    <label>Email *</label>
+                    <label>Email <span>*</span> </label>
                     <input
                       type="email"
                       name="email"
@@ -191,7 +191,7 @@ function ApplicationForm() {
               <div className="wrapper-from">
                 <div className="input-form-for-three-input">
                   <div className="three-feilds">
-                    <label>DOB *</label>
+                    <label>DOB <span>*</span></label>
                     <input
                       type="date"
                       name="dob"
@@ -200,7 +200,7 @@ function ApplicationForm() {
                     />
                   </div>
                   <div className="three-feilds">
-                    <label>Gender *</label>
+                    <label>Gender <span>*</span></label>
                     <select
                       name="gender"
                       value={form.gender}
@@ -218,7 +218,7 @@ function ApplicationForm() {
               <div className="wrapper-from">
                 <div className="input-form-for-three-input">
                   <div className="three-feilds">
-                    <label>Aadhar Card No</label>
+                    <label>Aadhar Card No <span>*</span></label>
                     <input
                       type="text"
                       name="aadhar"
@@ -228,7 +228,7 @@ function ApplicationForm() {
                     />
                   </div>
                   <div className="three-feilds">
-                    <label>Pan Card</label>
+                    <label>Pan Card <span>*</span></label>
                     <input
                       type="text"
                       name="pan"
@@ -243,7 +243,7 @@ function ApplicationForm() {
               <div className="wrapper-from">
                 <div className="input-form-for-three-input">
                   <div className="three-feilds">
-                    <label>Highest Qualification</label>
+                    <label>Highest Qualification <span>*</span></label>
                     <select
                       name="qualification"
                       value={form.qualification}
@@ -257,7 +257,7 @@ function ApplicationForm() {
                     </select>
                   </div>
                   <div className="three-feilds">
-                    <label>Highest Qualification Marksheet *</label>
+                    <label>Highest Qualification Marksheet <span>*</span></label>
                     <input
                       type="file"
                       name="marksheet"
@@ -270,7 +270,7 @@ function ApplicationForm() {
               <div className="wrapper-from">
                 <div className="input-form-for-three-input">
                   <div className="three-feilds">
-                    <label>Aadhar Card *</label>
+                    <label>Aadhar Card <span>*</span></label>
                     <input
                       type="file"
                       name="aadharFile"

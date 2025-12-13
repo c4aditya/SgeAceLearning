@@ -1512,7 +1512,10 @@ input[type="number"] {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
-
+ .three-feilds label span {
+        color: red;
+        
+    }
 /* ------------------------------------------------------------------------------------ Student Review ends ------------------------------------------------------------------------------------------ */
 
 /*-----------------------------------------------------------------------------------------Responsive css start ------------------------------------------------------------------------------------- */
@@ -2141,7 +2144,9 @@ input[type="number"] {
 
     .three-feilds label {
         font-size: 14px;
+        
     }
+    
 
     .input-form-for-three-input input {
         padding: 5px !important;
@@ -2465,6 +2470,7 @@ input[type="number"] {
     .three-feilds label {
         font-size: 14px;
     }
+   
 
     .input-form-for-three-input input {
         padding: 5px !important;
