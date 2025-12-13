@@ -14,13 +14,15 @@
 }
 
 .top-poster-section {
-    background: url("https://res.cloudinary.com/dxgmovaih/image/upload/v1755081610/nasa-Q1p7bh3SHj8-unsplash_qavbqo.jpg");
+   
+    background: url("https://img.veenaworld.com/vw-assets/images/homepage/World-map.svg");
     display: flex;
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    background-color: #081021;
     
 }
 

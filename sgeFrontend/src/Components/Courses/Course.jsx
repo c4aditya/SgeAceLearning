@@ -68,7 +68,7 @@ function CourseSection({ contactUs }) {
                         viewport={{ once: true, amount: 0.3 }}
                         className="right-side-our-program">
 
-                        <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1756443830/traningPoster_spkrer.avif" alt="posterimage" loading="lazy"></img>
+                        <img src="https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595850.jpg?t=st=1765609518~exp=1765613118~hmac=d242afced1a4c2b854321736d121f52032da046de23a430dcf75919f428615da&w=1060" alt="posterimage" loading="lazy"></img>
 
 
                     </motion.div>
@@ -182,7 +182,7 @@ function CourseSection({ contactUs }) {
                             viewport={{ once: true, amount: 0.3 }}
                             className="right-side-our-program">
 
-                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1756448138/DeWatermark.ai_1756448119929_rtuyqo.jpg"></img>
+                            <img src="https://thumbs.dreamstime.com/b/businessman-suit-holds-sign-reads-why-choose-us-emphasizing-benefits-service-product-to-attract-retain-409827718.jpg"></img>
 
 
                         </motion.div>
@@ -218,7 +218,7 @@ function CourseSection({ contactUs }) {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             className="instructor-images">
-                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237306/smiling-female-student-doing-homework-desk-1414x1536_my0vpk.jpg">
+                            <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607159/smiling-female-student-doing-homework-desk-1414x1536_ghnlfm.jpg">
 
                             </img>
 
@@ -247,12 +247,12 @@ function CourseSection({ contactUs }) {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             className="instructor-images">
-                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237288/successful-businessman-1414x1536_mjuwfg.jpg">
+                            <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607162/successful-businessman-1414x1536_tvqls5.jpg">
                             </img>
 
                             <div className="teacher-name-and-occ">
 
-                                <p className="t-name">Krishna Gopal</p>
+                                <p className="t-name">Aditya Joshi</p>
                                 <p className="t-occ">Professor</p>
 
                             </div>
@@ -273,7 +273,7 @@ function CourseSection({ contactUs }) {
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
                             className="instructor-images hide-images">
-                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754237280/confident-businessman-1414x1536_yvf2g5.jpg">
+                            <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607164/confident-businessman-1414x1536_zzs1b3.jpg">
                             </img>
 
                             <div className="teacher-name-and-occ">

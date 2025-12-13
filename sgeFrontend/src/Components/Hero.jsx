@@ -109,8 +109,8 @@ function Hero() {
               >
                 <div className="image-of-persion">
                   <img
-                    src="https://res.cloudinary.com/dxgmovaih/image/upload/v1757716168/Screenshot_2025-09-13_035821_ra3ybe.png" 
-                    alt="Person 1"
+                    src="https://st3.depositphotos.com/1092019/15323/i/450/depositphotos_153233456-stock-photo-who-we-are-concept-on.jpg" 
+                    alt="who we are image"
                   />
                 </div>
 
@@ -132,7 +132,7 @@ function Hero() {
             viewport={{ once: true, amount: 0.3 }}
             className="main-img-posters-adv"
           >
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1755680851/3_dedag2.png" alt="Poster_1" />
+            <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607159/3_onpujl.png" alt="Poster_1" />
           </motion.div>
 
           <motion.div
@@ -141,7 +141,7 @@ function Hero() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="main-img-posters-adv">
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754915677/Blue_and_Yellow_Modern_Online_Learning_Courses_LinkedIn_Post_1_iznsqf.png" alt="Poster 2" />
+            <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607160/1_dpacie.png" alt="Poster 2" />
           </motion.div>
 
           <motion.div
@@ -150,7 +150,7 @@ function Hero() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="main-img-posters-adv">
-            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1755680847/1_npojur.png" alt="Poster 3" />
+            <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607162/2_pq6jbb.png" alt="Poster 3" />
           </motion.div>
         </div>
       </section>

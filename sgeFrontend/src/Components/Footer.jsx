@@ -16,7 +16,7 @@ function Footer() {
 
 
                         <div className="footer-image">
-                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754122815/cropped-Web_Photo_Editor-removebg-preview-1_tckv9x.png" />
+                            <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607163/cropped-Web_Photo_Editor-removebg-preview-1_azvcqt.png" />
                         </div>
 
                         <div className="history-and-social-meadia-links-footer">

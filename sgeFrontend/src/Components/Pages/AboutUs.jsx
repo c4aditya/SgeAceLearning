@@ -87,7 +87,7 @@ function AboutUs() {
                                 className="right-side-about-us"
                             >
                                 <div>
-                                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1757716168/Screenshot_2025-09-13_035821_ra3ybe.png" />
+                                    <img src="https://st3.depositphotos.com/1092019/15323/i/450/depositphotos_153233456-stock-photo-who-we-are-concept-on.jpg" />
                                 </div>
                             </motion.div>
                         </div>
@@ -113,7 +113,7 @@ function AboutUs() {
                         <div className="image-and-heading-future">
 
                             <div className="future-icon">
-                                <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1755073329/Icon-1_xaepcc.svg" />
+                                <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607164/Icon_la06g3.svg" />
                             </div>
 
                             <div className="future-heading">
@@ -143,7 +143,7 @@ function AboutUs() {
                         <div className="image-and-heading-future">
 
                             <div className="future-icon">
-                                <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1755078679/Icon_eils5a.svg" />
+                                <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607164/Icon-3_sy4vil.svg" />
                             </div>
 
                             <div className="future-heading">
@@ -171,7 +171,7 @@ function AboutUs() {
                         <div className="image-and-heading-future">
 
                             <div className="future-icon">
-                                <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1755078584/Icon-3_qkmwqb.svg" />
+                                <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765607164/Icon-1_bwzuil.svg" />
                             </div>
 
                             <div className="future-heading">
