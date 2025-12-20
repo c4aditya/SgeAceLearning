@@ -36,6 +36,8 @@
 .main-content-poster-page {
     color: white;
     display: flex;
+    height: 100%;
+    justify-content: center;
     gap: 10px;
     flex-direction: column;
     gap: 20px;
@@ -180,6 +182,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    height: 60vh;
     background-color: #081021;
 }
 
