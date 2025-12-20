@@ -467,6 +467,10 @@ font-family: Rubik
 sans-serif;
 
 }
+.parat-text ul {
+    margin-top: 1%;
+    list-style: circle;
+}
 .main-cards-inside p{
     font-size: 15px;
     text-align: start;
