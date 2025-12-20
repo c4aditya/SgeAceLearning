@@ -394,7 +394,7 @@ function TermAndCondition() {
                         <div className="term-and-condition-content">
                             <div className="large-heading">
 
-                                <p> 8 - Governing Law
+                                <p> 8 - Limitation of Liability
 
 
                                 </p>
@@ -402,7 +402,7 @@ function TermAndCondition() {
                             </div>
 
                             <div className="parat-text">
-                        <p>These Terms and Conditions are governed by the laws of India. Any disputes, claims, or disagreements arising from enrollment, course access, use of services, or interpretation of these terms shall be subject to the exclusive jurisdiction of competent courts in India. By enrolling, learners agree to comply with applicable laws and regulations and acknowledge that any legal proceedings will be conducted within the Indian legal framework.</p>
+                      <p>Sge Ace Learning Institute provides educational content and guidance in good faith. However, the institute is not liable for any direct, indirect, or consequential damages arising from participation in courses, use of materials, or reliance on information provided. Learners assume full responsibility for their learning outcomes, participation, and application of knowledge gained. The institute cannot guarantee specific results, employment, or certifications beyond the standard completion criteria.</p>
                             </div>
                         </div>
                     </div>
