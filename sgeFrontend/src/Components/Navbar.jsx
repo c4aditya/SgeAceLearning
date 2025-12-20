@@ -129,7 +129,7 @@ function NavBar() {
                                     <li> <button onClick={() => Nevigate("/aboutus")}> ABOUT US </button> </li>
                                     <li><button onClick={() => Nevigate("/ourCourses")} >TRANING PROGRAM </button></li>
                                     <li><button onClick={() => Nevigate("/contactUs")} >CONTACT US </button></li>
-                                    <li><button onClick={() => Nevigate("/termAndCondition")}> TERMS AND CONDITIONS </button></li>
+                       
                                     <li><button onClick={() => Nevigate("/cartificate")}> CERTIFICATE  </button></li>
 
                                 </ul>
@@ -181,7 +181,7 @@ function NavBar() {
                                             <li onClick={() => { Nevigate("/aboutus") , closeSideBar() }}>About us</li>
                                             <li onClick={() => { Nevigate("/ourCourses") , closeSideBar() }}>Training Program</li>
                                             <li onClick={() => { Nevigate("/contactUs"), closeSideBar()}}>Contact us</li>
-                                            <li onClick={() => { Nevigate("/termAndCondition"), closeSideBar(); }}>Terms and conditions</li>
+                                    
                                             <li><button onClick={() => {Nevigate("/cartificate"),closeSideBar();}}> Certificate  </button></li>
 
                                         </ul>

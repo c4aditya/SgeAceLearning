@@ -117,6 +117,7 @@ function Footer() {
                                     <li onClick={()=> Navigate("/applicationForm")} >Apply For Admission</li>
                                     <li onClick={()=>Navigate("/ourCourses")}>Courses</li>
                                     <li onClick={()=>Navigate("/ourCourses")}>Fee Structure</li>
+                                     <li onClick={()=>Navigate("/termAndCondition")}>Term and condition's</li>
                                     
                                 </ul>
                             </div>
