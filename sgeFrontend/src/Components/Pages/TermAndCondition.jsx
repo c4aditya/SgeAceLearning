@@ -192,7 +192,7 @@ function TermAndCondition() {
                     </div>
 
 
-                    <div className="term-and-condition-content">
+                    {/* <div className="term-and-condition-content">
 
                         <div className="large-heading">
 
@@ -228,7 +228,7 @@ function TermAndCondition() {
 
 
 
-                    </div>
+                    </div> */}
                     {/* 
                     <div className="term-and-condition-content">
 
@@ -272,7 +272,7 @@ function TermAndCondition() {
 
                     </div> */}
 
-                    <div className="term-and-condition-content">
+                    {/* <div className="term-and-condition-content">
 
                         <div className="large-heading">
 
@@ -294,13 +294,13 @@ function TermAndCondition() {
 
 
 
-                    </div>
+                    </div> */}
 
                     <div className="footer-upper-cards">
                         <div className="term-and-condition-content">
                             <div className="large-heading">
 
-                                <p> 4 - User Eligibility
+                                <p> 2 - User Eligibility
                                 </p>
 
                             </div>
@@ -315,7 +315,7 @@ function TermAndCondition() {
                         <div className="term-and-condition-content">
                             <div className="large-heading">
 
-                                <p> 5 - Intellectual Property
+                                <p> 3 - Intellectual Property
                                 </p>
 
                             </div>
@@ -330,7 +330,7 @@ function TermAndCondition() {
                         <div className="term-and-condition-content">
                             <div className="large-heading">
 
-                                <p> 6 - Code of Conduct
+                                <p> 4 - Code of Conduct
                                 </p>
 
                             </div>
@@ -345,7 +345,7 @@ function TermAndCondition() {
                         <div className="term-and-condition-content">
                             <div className="large-heading">
 
-                                <p> 7 - Access to Materials
+                                <p> 5 - Access to Materials
 
                                 </p>
 
@@ -361,7 +361,7 @@ function TermAndCondition() {
                         <div className="term-and-condition-content">
                             <div className="large-heading">
 
-                                <p> 8 - Privacy and Data Protection
+                                <p> 6 - Privacy and Data Protection
 
                                 </p>
 
@@ -377,7 +377,24 @@ function TermAndCondition() {
                         <div className="term-and-condition-content">
                             <div className="large-heading">
 
-                                <p> 9 - Governing Law
+                                <p> 7 - Governing Law
+
+
+                                </p>
+
+                            </div>
+
+                            <div className="parat-text">
+                        <p>These Terms and Conditions are governed by the laws of India. Any disputes, claims, or disagreements arising from enrollment, course access, use of services, or interpretation of these terms shall be subject to the exclusive jurisdiction of competent courts in India. By enrolling, learners agree to comply with applicable laws and regulations and acknowledge that any legal proceedings will be conducted within the Indian legal framework.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                      <div className="footer-upper-cards">
+                        <div className="term-and-condition-content">
+                            <div className="large-heading">
+
+                                <p> 8 - Governing Law
 
 
                                 </p>
