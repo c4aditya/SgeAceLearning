@@ -139,7 +139,7 @@ function OurCourses() {
                                         </div>
 
                                         <div className="enq">
-                                            <button onClick={()=> navigate("/courseDeatils" , {state :data})}>Course Deatils</button>
+                                            <button onClick={()=> navigate("/courseDeatils" , {state :data})}>Course Details</button>
                                         </div>
 
                                         <div className="enq">
