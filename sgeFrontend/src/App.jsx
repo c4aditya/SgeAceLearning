@@ -13,6 +13,7 @@ import ApplicationForm from "./Components/Pages/ApplicationFromPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import Certificate from "./Components/Pages/Certificate";
 import Refund_Policy from "./Components/Pages/RefundPolocy";
+import Placement from "./Components/Pages/Placement";
 function App() {
 const footerRef = useRef(null)
 
@@ -36,6 +37,7 @@ const footerRef = useRef(null)
       <Route path="/termAndCondition" element={<TermAndCondition/>} />
       <Route path="/cartificate" element={<Certificate/>} />
       <Route path="/refundPolicy" element={<Refund_Policy/>} />
+      <Route path="/placement" element={<Placement/>}/>
     </Routes>
       <Footer ref = {footerRef}/>
   </Router>

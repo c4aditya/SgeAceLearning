@@ -118,6 +118,7 @@ function Footer() {
                                     <li onClick={()=>Navigate("/ourCourses")}>Courses</li>
                                     <li onClick={()=>Navigate("/ourCourses")}>Fee Structure</li>
                                      <li onClick={()=>Navigate("/refundPolicy")}>Refund Policy</li>
+                                     <li  onClick={()=>Navigate("/placement")}> Placement</li>
                                         <li onClick={()=>Navigate("/termAndCondition")}>Term and condition's</li>
                                     
                                 </ul>
