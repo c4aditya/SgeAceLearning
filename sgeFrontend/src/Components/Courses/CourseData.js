@@ -14,8 +14,8 @@ const Course = [
       one: " Receive an accredited certificate to boost your professional profile.",
       two: " Access personalized help throughout your learning journey.",
       three: "Prepare thoroughly with regular tests to assess your progress.",
-      four: "Job Develop the confidence and skills essential for career growth.",
-      five: "Comprehen Over 60 well-structured videos covering key concepts."
+      four: "Develop the confidence and skills essential for career growth.",
+      five: "Comprehensive Over 60 well-structured videos covering key concepts."
     },
     jobResponsibilities: {
       one: "Apply personality development techniques to improve communication and leadership.",
@@ -47,7 +47,7 @@ const Course = [
       one: "Industry-recognized credential to enhance your employability.",
       two: "Expert guidance throughout your coursework.",
       three: "Regular tests to track your mastery.",
-      four: "JPractical skills tailored for hospitality sector.",
+      four: "Practical skills tailored for hospitality sector.",
       five: "Comprehensive video lessons covering hotel management essentials."
     },
     jobResponsibilities: {
@@ -61,7 +61,7 @@ const Course = [
       one:"No Pre-requisite Required",
       two:"50+ hours On-Demand Video",
       three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
+      four:"Revision & Doubts Class",
       five:"with Doubt Assistance",
     }
   },
@@ -94,7 +94,7 @@ const Course = [
       one:"No Pre-requisite Required",
       two:"50+ hours On-Demand Video",
       three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
+      four:"Revision & Doubts Class",
       five:"with Doubt Assistance",
     }
   },
@@ -127,7 +127,7 @@ const Course = [
       one:"No Pre-requisite Required",
       two:"50+ hours On-Demand Video",
       three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
+      four:"Revision & Doubts Class",
       five:"with Doubt Assistance",
     }
   },
@@ -160,7 +160,7 @@ const Course = [
       one:"No Pre-requisite Required",
       two:"50+ hours On-Demand Video",
       three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
+      four:"Revision & Doubts Class",
       five:"with Doubt Assistance",
     }
   },
@@ -194,7 +194,7 @@ const Course = [
       one:"No Pre-requisite Required",
       two:"50+ hours On-Demand Video",
       three:"Live Interview Preparation & mentorship sessions",
-      four:"Revision && Doubts Class",
+      four:"Revision & Doubts Class",
       five:"with Doubt Assistance",
     }
   },

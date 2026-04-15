@@ -127,7 +127,7 @@ function NavBar() {
                                 <ul>
                                     <li><button onClick={() => Nevigate("/")}> HOME </button></li>
                                     <li> <button onClick={() => Nevigate("/aboutus")}> ABOUT US </button> </li>
-                                    <li><button onClick={() => Nevigate("/ourCourses")} >TRANING PROGRAM </button></li>
+                                    <li><button onClick={() => Nevigate("/ourCourses")} >TRAINING PROGRAM </button></li>
                                     <li><button onClick={() => Nevigate("/contactUs")} >CONTACT US </button></li>
                        
                                     <li><button onClick={() => Nevigate("/cartificate")}> CERTIFICATE  </button></li>

@@ -22,7 +22,7 @@ function Footer() {
                         <div className="history-and-social-meadia-links-footer">
 
                             <div className="history-of-us">
-                                <p>SGACE Learning Training Institute (OPC) Pvt. Ltd., established in 2020 in Near Galla Mandi oppsit Indian Oil petrol pump Amanpur road Kasganj , India, Uttar Pradesh, is MCA-registered and offers modern, hands-on aviation training.With experienced faculty and interactive teaching, we focus on practical learning and real-time simulations.Our mission is to prepare students for success in competitive professional environments through quality education and industry partnerships.</p>
+                                <p>SGACE Learning Training Institute (OPC) Pvt. Ltd., established in 2020 in Near Galla Mandi opposite Indian Oil petrol pump Amanpur road Kasganj , India, Uttar Pradesh, is MCA-registered and offers modern, hands-on aviation training. With experienced faculty and interactive teaching, we focus on practical learning and real-time simulations. Our mission is to prepare students for success in competitive professional environments through quality education and industry partnerships.</p>
                             </div>
 
                             <div className="footer-section-social-media">
@@ -51,7 +51,7 @@ function Footer() {
                                     <li onClick={()=> Navigate("/aboutus")}>About Us</li>
                                     <li onClick={()=>Navigate("/contactUs")}>Contact Us </li>
                                     <li onClick={()=>Navigate("/ourCourses")}>Our Courses</li>
-                                    <li>Testominals</li>
+                                    <li>Testimonials</li>
                                 </ul>
                             </div>
                         </div>
@@ -64,12 +64,12 @@ function Footer() {
 
                             <div className="list-links-on-footer">
                                 <ul>
-                                    <li onClick={()=>Navigate("/ourCourses")}>Presonal Reengniring Program</li>
-                                    <li onClick={()=>Navigate("/ourCourses")}>Hotel Managemnt</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Personal Reengineering Program</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Hotel Management</li>
                                     <li onClick={()=>Navigate("/ourCourses")}>Airport Management </li>
                                     <li onClick={()=>Navigate("/ourCourses")}>Aviation</li>
                                     <li onClick={()=>Navigate("/ourCourses")}>Air Hostess</li>
-                                    <li onClick={()=>Navigate("/ourCourses")}>Curise Ship</li>
+                                    <li onClick={()=>Navigate("/ourCourses")}>Cruise Ship</li>
                                 </ul>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ function Footer() {
                                 <ul>
                                     <li onClick={()=>Navigate("/contactUs")}>Help Center</li>
                                     <li onClick={()=>Navigate("/contactUs")}>Connect us</li>
-                                    <li onClick={()=>Navigate("/aboutus")}>Student Feed Backs</li>
+                                    <li onClick={()=>Navigate("/aboutus")}>Student Feedbacks</li>
                                     
                                 </ul>
                             </div>
@@ -98,9 +98,9 @@ function Footer() {
                             <div className="list-links-on-footer">
                                 <ul>
                                     <li onClick={()=>Navigate("/contactUs")}>Blogs</li>
-                                    <li onClick={()=>Navigate("/contactUs")}>Our Feets</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Our Fleets</li>
                                     <li onClick={()=>Navigate("/contactUs")}>Aviation News</li>
-                                    <li onClick={()=>Navigate("/contactUs")}>Eventd</li>
+                                    <li onClick={()=>Navigate("/contactUs")}>Events</li>
                                 </ul>
                             </div>
 
@@ -119,7 +119,7 @@ function Footer() {
                                     <li onClick={()=>Navigate("/ourCourses")}>Fee Structure</li>
                                      <li onClick={()=>Navigate("/refundPolicy")}>Refund Policy</li>
                                      <li  onClick={()=>Navigate("/placement")}> Placement</li>
-                                        <li onClick={()=>Navigate("/termAndCondition")}>Term and condition's</li>
+                                        <li onClick={()=>Navigate("/termAndCondition")}>Terms and Conditions</li>
                                     
                                 </ul>
                             </div>
@@ -131,11 +131,11 @@ function Footer() {
 
                       <div className="copy-right-sections">
                         <div className="main-copy">
-                            <p>Copyright <b><MdOutlineCopyright/></b>2025 SGACE Learning Traning Institute | All rights reserved</p>
+                            <p>Copyright <b><MdOutlineCopyright/></b>2025 SGACE Learning Training Institute | All rights reserved</p>
                         </div>
 
                         <div className="copy-links">
-                            <p onClick={()=> Navigate("/termAndCondition")}> Trem of services | Privacy Policy  </p>
+                            <p onClick={()=> Navigate("/termAndCondition")}> Terms of Service | Privacy Policy  </p>
                         </div>
                       </div>
                     </div>

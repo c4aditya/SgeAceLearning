@@ -84,7 +84,7 @@ function ContactUs() {
                                     </div>
 
                                     <div className="single-input-feild">
-                                        <label>MOBLE NUMBER</label>
+                                        <label>MOBILE NUMBER</label>
                                         <input type="number" placeholder="+ 91"></input>
                                     </div>
 

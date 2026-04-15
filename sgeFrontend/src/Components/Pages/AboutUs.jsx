@@ -37,7 +37,7 @@ function AboutUs() {
 
                         <div className="per-poster-para">
 
-                            <p>Part of the rich legacy of the Sge Ace Learnign Training Institute , we aim to transform education by creating programs delivered by leading industry practitioners</p>
+                            <p>Part of the rich legacy of the Sge Ace Learning Training Institute , we aim to transform education by creating programs delivered by leading industry practitioners</p>
                         </div>
                     </motion.div>
 
@@ -177,7 +177,7 @@ function AboutUs() {
                             </div>
 
                             <div className="future-heading">
-                                <p>Our Moto</p>
+                                <p>Our Motto</p>
                             </div>
 
                         </div>
@@ -411,7 +411,7 @@ function AboutUs() {
                 
                                                     <ul>
                                                         <li><span><PiChalkboardTeacherThin /></span> Flexible Scheduling</li>
-                                                        <li><span><FaMedal /></span>Varified Certificates </li>
+                                                        <li><span><FaMedal /></span>Verified Certificates </li>
                                                         <li><span>< MdFlight /></span> Experienced Instructors</li>
                                                         <li><span><MdOutlineSecurity /></span>State-of-the-Art Facilities</li>
                 

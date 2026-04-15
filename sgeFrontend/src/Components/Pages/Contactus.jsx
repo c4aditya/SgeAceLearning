@@ -111,7 +111,7 @@ function ContactUs() {
 
                     <div className="content-about-us-hero">
                         <ul>
-                            <li><span><SlLocationPin /></span>Near Galla Mandi oppsit Indian Oil petrol pump Amanpur road Kasganj , Pin - 207123</li>
+                            <li><span><SlLocationPin /></span>Near Galla Mandi opposite Indian Oil petrol pump Amanpur road Kasganj , Pin - 207123</li>
                             <li><span><VscCallOutgoing /></span>+91 9910926523</li>
                             <li><span>< SiMinutemailer /></span>info@acelearningtraining.com</li>
                             <li> <span>< SiMinutemailer /></span>admission@acelearningtraining.com</li>

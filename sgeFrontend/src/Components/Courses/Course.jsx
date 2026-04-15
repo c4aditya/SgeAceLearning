@@ -39,7 +39,7 @@ function CourseSection({ contactUs }) {
                         </div>
 
                         <div className="para-about-us-hero-heading">
-                            <p>Avation Industryes And Hotel Management</p>
+                            <p>Aviation Industries And Hotel Management</p>
                         </div>
 
                         <div className="content-about-us-hero">
@@ -164,7 +164,7 @@ function CourseSection({ contactUs }) {
 
                                     <ul>
                                         <li><span><PiChalkboardTeacherThin /></span> Flexible Scheduling</li>
-                                        <li><span><FaMedal /></span>Varified Certificates </li>
+                                        <li><span><FaMedal /></span>Verified Certificates </li>
                                         <li><span>< MdFlight /></span> Experienced Instructors</li>
                                         <li><span><MdOutlineSecurity /></span>State-of-the-Art Facilities</li>
 

@@ -43,7 +43,7 @@ function StudentReview() {
 
                <div className="wrapper testmonial">
                 <div className="about-us-sub-heading  center ">
-                    <p>TESTMONIAL</p>
+                    <p>TESTIMONIAL</p>
                 </div>
 
                 <div className="para-about-us-hero-heading center">
